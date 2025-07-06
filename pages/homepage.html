@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Corporación CAMIL - Servicios de Construcción e Infraestructura</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body class="bg-background text-text-primary">
+  <!-- Header Section -->
+  <header class="sticky top-0 z-50 bg-surface shadow-light border-b border-border">
+    <div class="container mx-auto px-4 py-4">
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <img src="../Images/Logo.png" alt="Logo Corporación CAMIL" class="h-16 w-auto" />
+                <span class="text-2xl font-heading font-bold text-primary">Corporación CAMIL</span>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="homepage.html" class="text-text-primary hover:text-primary transition-colors duration-200 font-semibold">Inicio</a>
+                <a href="services_detail.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Servicios</a>
+                <a href="project_gallery.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Proyectos</a>
+                <a href="about_us.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Nosotros</a>
+                <a href="contact.html" class="btn-secondary">Contacto</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 rounded-md hover:bg-gray-100 transition-colors duration-200">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-border pt-4">
+            <div class="flex flex-col space-y-4">
+                <a href="homepage.html" class="text-text-primary hover:text-primary transition-colors duration-200 font-semibold">Inicio</a>
+                <a href="services_detail.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Servicios</a>
+                <a href="project_gallery.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Proyectos</a>
+                <a href="about_us.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Nosotros</a>
+                <a href="contact.html" class="btn-secondary inline-block text-center">Contacto</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" alt="Sitio de construcción con edificio moderno" class="w-full h-full object-cover" loading="eager" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+        
+        <div class="relative z-10 container mx-auto px-4 text-center text-white">
+            <h1 class="text-fluid-4xl font-heading font-bold mb-6 animate-fade-in">
+                Construyendo el Futuro con Excelencia
+            </h1>
+            <p class="text-fluid-xl mb-8 max-w-2xl mx-auto animate-slide-up">
+                Servicios profesionales de construcción, infraestructura y mantenimiento industrial. 
+                Más de 15 años de experiencia construyendo proyectos de calidad en todo El Salvador.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up">
+                <a href="contact.html" class="btn-secondary text-lg px-8 py-4 inline-block">
+                    Solicitar Cotización
+                </a>
+                <a href="project_gallery.html" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-md font-semibold hover:bg-white hover:text-text-primary transition-all duration-200 inline-block">
+                    Ver Nuestros Proyectos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-20 bg-surface">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-fluid-3xl font-heading font-bold text-text-primary mb-4">Nuestros Servicios</h2>
+                <p class="text-fluid-lg text-text-secondary max-w-2xl mx-auto">
+                    Ofrecemos servicios integrales de construcción adaptados a sus necesidades específicas y superando sus expectativas.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Construcción General -->
+                <div class="card text-center group hover:shadow-large transition-all duration-300">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-200 transition-colors duration-200">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-fluid-xl font-heading font-semibold mb-4">Construcción General</h3>
+                    <p class="text-text-secondary mb-6">Edificaciones residenciales, naves industriales, cuartos fríos y construcción de viviendas.</p>
+                    <a href="services_detail.html" class="inline-flex items-center text-accent font-semibold hover:text-accent-700 transition-colors duration-200">
+                        Saber Más
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Infraestructura Vial -->
+                <div class="card text-center group hover:shadow-large transition-all duration-300">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-secondary-200 transition-colors duration-200">
+                        <svg class="w-8 h-8 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2c-4 0-8 .5-8 4v9.5C4 17.43 5.57 19 7.5 19L6 20.5l1.5 1.5L9 20.5h6l1.5 1.5L18 20.5l-1.5-1.5c1.93 0 3.5-1.57 3.5-3.5V6c0-3.5-4-4-8-4zM7.5 17c-.83 0-1.5-.67-1.5-1.5S6.67 14 7.5 14s1.5.67 1.5 1.5S8.33 17 7.5 17zm9 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm1.5-6H6V6h12v5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-fluid-xl font-heading font-semibold mb-4">Infraestructura Vial</h3>
+                    <p class="text-text-secondary mb-6">Mantenimiento de redes pavimentadas y no pavimentadas, balastado y supervisión de carreteras.</p>
+                    <a href="services_detail.html" class="inline-flex items-center text-accent font-semibold hover:text-accent-700 transition-colors duration-200">
+                        Saber Más
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Infraestructura Hidráulica -->
+                <div class="card text-center group hover:shadow-large transition-all duration-300">
+                    <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-accent-200 transition-colors duration-200">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12,2C15.31,2 18,4.66 18,7.95C18,12.41 15.31,16 12,16C8.69,16 6,12.41 6,7.95C6,4.66 8.69,2 12,2M12,4C9.79,4 8,5.79 8,7.95C8,11.32 9.79,14 12,14C14.21,14 16,11.32 16,7.95C16,5.79 14.21,4 12,4M7,18A1,1 0 0,0 6,19A1,1 0 0,0 7,20H17A1,1 0 0,0 18,19A1,1 0 0,0 17,18H7Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-fluid-xl font-heading font-semibold mb-4">Infraestructura Hidráulica</h3>
+                    <p class="text-text-secondary mb-6">Diseño hidráulico, perforación de pozos, sistemas de agua potable y subestaciones eléctricas.</p>
+                    <a href="services_detail.html" class="inline-flex items-center text-accent font-semibold hover:text-accent-700 transition-colors duration-200">
+                        Saber Más
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Servicios Especializados -->
+                <div class="card text-center group hover:shadow-large transition-all duration-300">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-200 transition-colors duration-200">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.22,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.22,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-fluid-xl font-heading font-semibold mb-4">Servicios Especializados</h3>
+                    <p class="text-text-secondary mb-6">Climatización, instalaciones eléctricas, mantenimiento industrial y recubrimientos epóxicos.</p>
+                    <a href="services_detail.html" class="inline-flex items-center text-accent font-semibold hover:text-accent-700 transition-colors duration-200">
+                        Saber Más
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Gallery Section -->
+    <section id="proyectos" class="py-20 bg-background">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-fluid-3xl font-heading font-bold text-text-primary mb-4">Proyectos Recientes</h2>
+                <p class="text-fluid-lg text-text-secondary max-w-2xl mx-auto">
+                    Explore nuestro portafolio de proyectos completados que demuestran nuestro compromiso con la calidad y la excelencia.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Proyecto 1 -->
+                <div class="group cursor-pointer" onclick="openLightbox('https://images.pixabay.com/photo/2016/11/29/03/53/house-1867187_1280.jpg', 'Edificio Residencial Moderno')">
+                    <div class="relative overflow-hidden rounded-lg shadow-medium group-hover:shadow-large transition-all duration-300">
+                        <img src="https://images.pixabay.com/photo/2016/11/29/03/53/house-1867187_1280.jpg" alt="Edificio Residencial Moderno" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
+                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-fluid-lg font-heading font-semibold mb-2">Edificio Residencial Moderno</h3>
+                        <p class="text-text-secondary">Construcción residencial contemporánea con materiales sostenibles</p>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="group cursor-pointer" onclick="openLightbox('https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800', 'Nave Industrial')">
+                    <div class="relative overflow-hidden rounded-lg shadow-medium group-hover:shadow-large transition-all duration-300">
+                        <img src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Nave Industrial" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
+                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-fluid-lg font-heading font-semibold mb-2">Nave Industrial</h3>
+                        <p class="text-text-secondary">Complejo industrial con instalaciones eléctricas modernas</p>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="group cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&w=800', 'Infraestructura Vial')">
+                    <div class="relative overflow-hidden rounded-lg shadow-medium group-hover:shadow-large transition-all duration-300">
+                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&w=800" alt="Infraestructura Vial" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
+                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-fluid-lg font-heading font-semibold mb-2">Infraestructura Vial</h3>
+                        <p class="text-text-secondary">Proyecto de mantenimiento y rehabilitación de carreteras</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="project_gallery.html" class="btn-primary">Ver Todos los Proyectos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="nosotros" class="py-20 bg-surface">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-fluid-3xl font-heading font-bold text-text-primary mb-6">Acerca de Corporación CAMIL</h2>
+                    <p class="text-fluid-lg text-text-secondary mb-6">
+                        Desde el 30 de mayo de 2008, Corporación CAMIL se ha enfocado en proporcionar un servicio altamente competitivo y eficiente, basado en la ética profesional dentro de la Industria de la Construcción.
+                    </p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center mt-1">
+                                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-heading font-semibold text-text-primary">Calidad Excepcional</h3>
+                                <p class="text-text-secondary">Cada proyecto se ejecuta con precisión y atención al detalle</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center mt-1">
+                                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-heading font-semibold text-text-primary">Entrega Oportuna</h3>
+                                <p class="text-text-secondary">Respetamos los plazos y entregamos proyectos a tiempo</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center mt-1">
+                                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-heading font-semibold text-text-primary">Satisfacción del Cliente</h3>
+                                <p class="text-text-secondary">Su visión es nuestra prioridad, garantizando total satisfacción</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="about_us.html" class="btn-primary">Conocer Más Sobre Nosotros</a>
+                </div>
+                
+                <div class="relative">
+                    <img src="https://images.pixabay.com/photo/2015/07/02/20/57/construction-worker-569149_1280.jpg" alt="Equipo de Corporación CAMIL trabajando" class="w-full h-96 object-cover rounded-lg shadow-large" loading="lazy" />
+                    <div class="absolute -bottom-6 -right-6 bg-secondary text-white p-6 rounded-lg shadow-large">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold">15+</div>
+                            <div class="text-sm">Años de Experiencia</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-20 bg-background">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-fluid-3xl font-heading font-bold text-text-primary mb-4">Contáctanos</h2>
+                <p class="text-fluid-lg text-text-secondary max-w-2xl mx-auto">
+                    ¿Listo para comenzar su proyecto de construcción? Contáctenos hoy para una consulta gratuita y cotización.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="card">
+                    <h3 class="text-fluid-xl font-heading font-semibold mb-6">Envíenos un Mensaje</h3>
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="firstName" class="block text-sm font-semibold text-text-primary mb-2">Nombre</label>
+                                <input type="text" id="firstName" name="firstName" class="form-input" required />
+                                <div class="error-message hidden text-error text-sm mt-1"></div>
+                            </div>
+                            <div>
+                                <label for="lastName" class="block text-sm font-semibold text-text-primary mb-2">Apellido</label>
+                                <input type="text" id="lastName" name="lastName" class="form-input" required />
+                                <div class="error-message hidden text-error text-sm mt-1"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-semibold text-text-primary mb-2">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" class="form-input" required />
+                            <div class="error-message hidden text-error text-sm mt-1"></div>
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-sm font-semibold text-text-primary mb-2">Número de Teléfono</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" />
+                            <div class="error-message hidden text-error text-sm mt-1"></div>
+                        </div>
+                        
+                        <div>
+                            <label for="service" class="block text-sm font-semibold text-text-primary mb-2">Servicio Requerido</label>
+                            <select id="service" name="service" class="form-input" required>
+                                <option value="">Seleccione un servicio</option>
+                                <option value="construccion-general">Construcción General</option>
+                                <option value="infraestructura-vial">Infraestructura Vial</option>
+                                <option value="infraestructura-hidraulica">Infraestructura Hidráulica</option>
+                                <option value="servicios-especializados">Servicios Especializados</option>
+                            </select>
+                            <div class="error-message hidden text-error text-sm mt-1"></div>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-semibold text-text-primary mb-2">Detalles del Proyecto</label>
+                            <textarea id="message" name="message" rows="4" class="form-input" placeholder="Cuéntenos sobre su proyecto..." required></textarea>
+                            <div class="error-message hidden text-error text-sm mt-1"></div>
+                        </div>
+                        
+                        <button type="submit" class="btn-secondary w-full">Enviar Mensaje</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="space-y-8">
+                    <div class="card">
+                        <h3 class="text-fluid-xl font-heading font-semibold mb-6">Información de Contacto</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <svg class="w-6 h-6 text-primary mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold text-text-primary">Dirección</h4>
+                                    <p class="text-text-secondary">San Salvador, El Salvador</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-3">
+                                <svg class="w-6 h-6 text-primary mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold text-text-primary">Teléfono</h4>
+                                    <p class="text-text-secondary">(503) 2XXX-XXXX</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-3">
+                                <svg class="w-6 h-6 text-primary mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold text-text-primary">Correo</h4>
+                                    <p class="text-text-secondary">info@corporacioncamil.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-3">
+                                <svg class="w-6 h-6 text-primary mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold text-text-primary">Horarios de Atención</h4>
+                                    <p class="text-text-secondary">Lun - Vie: 8:00 AM - 5:00 PM<br />Sáb: 8:00 AM - 12:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map Placeholder -->
+                    <div class="card p-0 overflow-hidden">
+                        <div class="h-64 bg-gray-200 flex items-center justify-center">
+                            <div class="text-center">
+                                <svg class="w-12 h-12 text-gray-400 mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                                </svg>
+                                <p class="text-gray-500">Mapa Interactivo</p>
+                                <p class="text-sm text-gray-400">San Salvador, El Salvador</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="../Images/Logo.png" alt="Logo Corporación CAMIL" class="h-8 w-auto" />
+                        <span class="text-xl font-heading font-bold">Corporación CAMIL</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">Construyendo sueños en realidad con calidad profesional y servicio excepcional.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-secondary transition-colors duration-200">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-secondary transition-colors duration-200">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-secondary transition-colors duration-200">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-heading font-semibold mb-4">Servicios</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services_detail.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Construcción General</a></li>
+                        <li><a href="services_detail.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Infraestructura Vial</a></li>
+                        <li><a href="services_detail.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Infraestructura Hidráulica</a></li>
+                        <li><a href="services_detail.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Servicios Especializados</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-heading font-semibold mb-4">Empresa</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about_us.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Nosotros</a></li>
+                        <li><a href="project_gallery.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Proyectos</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Contacto</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-secondary transition-colors duration-200">Carreras</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-heading font-semibold mb-4">Información de Contacto</h3>
+                    <div class="space-y-2 text-gray-300">
+                        <p>San Salvador</p>
+                        <p>El Salvador</p>
+                        <p>(503) 2XXX-XXXX</p>
+                        <p>info@corporacioncamil.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300">© 2025 Corporación CAMIL. Todos los Derechos Reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden flex items-center justify-center p-4">
+        <div class="relative max-w-4xl max-h-full">
+            <button id="close-lightbox" class="absolute top-4 right-4 text-white text-4xl hover:text-gray-300 transition-colors duration-200 z-10">
+                &times;
+            </button>
+            <img id="lightbox-image" src alt class="max-w-full max-h-full object-contain" />
+            <div id="lightbox-caption" class="absolute bottom-4 left-4 right-4 text-white text-center bg-black bg-opacity-50 p-2 rounded"></div>
+        </div>
+    </div>
+
+    <script>
+        // Language data
+        const translations = {
+            es: {
+                // Navigation
+                home: "Inicio",
+                services: "Servicios",
+                projects: "Proyectos",
+                about: "Nosotros",
+                contact: "Contacto",
+                
+                // Hero Section
+                heroTitle: "Construyendo el Futuro con Excelencia",
+                heroDescription: "Servicios profesionales de construcción, infraestructura y mantenimiento industrial. Más de 15 años de experiencia construyendo proyectos de calidad en todo El Salvador.",
+                getQuote: "Solicitar Cotización",
+                viewProjects: "Ver Nuestros Proyectos",
+                
+                // Services Section
+                servicesTitle: "Nuestros Servicios",
+                servicesDescription: "Ofrecemos servicios integrales de construcción adaptados a sus necesidades específicas y superando sus expectativas.",
+                
+                // Service Cards
+                generalConstruction: "Construcción General",
+                generalConstructionDesc: "Edificaciones residenciales, naves industriales, cuartos fríos y construcción de viviendas.",
+                roadInfrastructure: "Infraestructura Vial",
+                roadInfrastructureDesc: "Mantenimiento de redes pavimentadas y no pavimentadas, balastado y supervisión de carreteras.",
+                hydraulicInfrastructure: "Infraestructura Hidráulica",
+                hydraulicInfrastructureDesc: "Diseño hidráulico, perforación de pozos, sistemas de agua potable y subestaciones eléctricas.",
+                specializedServices: "Servicios Especializados",
+                specializedServicesDesc: "Climatización, instalaciones eléctricas, mantenimiento industrial y recubrimientos epóxicos.",
+                
+                learnMore: "Saber Más",
+                
+                // Projects Section
+                projectsTitle: "Proyectos Recientes",
+                projectsDescription: "Explore nuestro portafolio de proyectos completados que demuestran nuestro compromiso con la calidad y la excelencia.",
+                viewAllProjects: "Ver Todos los Proyectos",
+                
+                // About Section
+                aboutTitle: "Acerca de Corporación CAMIL",
+                aboutDescription: "Desde el 30 de mayo de 2008, Corporación CAMIL se ha enfocado en proporcionar un servicio altamente competitivo y eficiente, basado en la ética profesional dentro de la Industria de la Construcción.",
+                learnMoreAbout: "Conocer Más Sobre Nosotros",
+                
+                // Contact Section
+                contactTitle: "Contáctanos",
+                contactDescription: "¿Listo para comenzar su proyecto de construcción? Contáctenos hoy para una consulta gratuita y cotización.",
+                sendMessage: "Enviar Mensaje",
+                
+                // Footer
+                footerDescription: "Construyendo sueños en realidad con calidad profesional y servicio excepcional.",
+                company: "Empresa",
+                contactInfo: "Información de Contacto",
+                allRightsReserved: "Todos los Derechos Reservados"
+            },
+            en: {
+                // Navigation
+                home: "Home",
+                services: "Services",
+                projects: "Projects",
+                about: "About",
+                contact: "Contact",
+                
+                // Hero Section
+                heroTitle: "Building the Future with Excellence",
+                heroDescription: "Professional construction, infrastructure and industrial maintenance services. Over 15 years of experience building quality projects throughout El Salvador.",
+                getQuote: "Get Quote",
+                viewProjects: "View Our Projects",
+                
+                // Services Section
+                servicesTitle: "Our Services",
+                servicesDescription: "We provide comprehensive construction services tailored to your specific needs and exceeding your expectations.",
+                
+                // Service Cards
+                generalConstruction: "General Construction",
+                generalConstructionDesc: "Residential buildings, industrial warehouses, cold rooms and housing construction.",
+                roadInfrastructure: "Road Infrastructure",
+                roadInfrastructureDesc: "Maintenance of paved and unpaved networks, ballasting and highway supervision.",
+                hydraulicInfrastructure: "Hydraulic Infrastructure",
+                hydraulicInfrastructureDesc: "Hydraulic design, well drilling, water supply systems and electrical substations.",
+                specializedServices: "Specialized Services",
+                specializedServicesDesc: "HVAC, electrical installations, industrial maintenance and epoxy coatings.",
+                
+                learnMore: "Learn More",
+                
+                // Projects Section
+                projectsTitle: "Recent Projects",
+                projectsDescription: "Explore our portfolio of completed projects that demonstrate our commitment to quality and excellence.",
+                viewAllProjects: "View All Projects",
+                
+                // About Section
+                aboutTitle: "About Corporación CAMIL",
+                aboutDescription: "Since May 30, 2008, Corporación CAMIL has focused on providing highly competitive and efficient service, based on professional ethics within the Construction Industry.",
+                learnMoreAbout: "Learn More About Us",
+                
+                // Contact Section
+                contactTitle: "Contact Us",
+                contactDescription: "Ready to start your construction project? Contact us today for a free consultation and quote.",
+                sendMessage: "Send Message",
+                
+                // Footer
+                footerDescription: "Building dreams into reality with professional quality and exceptional service.",
+                company: "Company",
+                contactInfo: "Contact Information",
+                allRightsReserved: "All Rights Reserved"
+            }
+        };
+
+        // Language switching functionality
+        function switchLanguage(lang) {
+            const elements = document.querySelectorAll('[data-translate]');
+            elements.forEach(element => {
+                const key = element.getAttribute('data-translate');
+                if (translations[lang] && translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+            
+            document.documentElement.lang = lang;
+            localStorage.setItem('selectedLanguage', lang);
+        }
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Language selectors
+        const languageSelector = document.getElementById('language-selector');
+        const mobileLanguageSelector = document.getElementById('mobile-language-selector');
+
+        languageSelector.addEventListener('change', (e) => {
+            switchLanguage(e.target.value);
+            mobileLanguageSelector.value = e.target.value;
+        });
+
+        mobileLanguageSelector.addEventListener('change', (e) => {
+            switchLanguage(e.target.value);
+            languageSelector.value = e.target.value;
+        });
+
+        // Load saved language preference
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedLanguage = localStorage.getItem('selectedLanguage') || 'es';
+            languageSelector.value = savedLanguage;
+            mobileLanguageSelector.value = savedLanguage;
+            // Spanish is default, no need to switch if already Spanish
+            if (savedLanguage !== 'es') {
+                switchLanguage(savedLanguage);
+            }
+        });
+
+        // Lightbox functionality
+        function openLightbox(imageSrc, caption) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightbox-image');
+            const lightboxCaption = document.getElementById('lightbox-caption');
+            
+            lightboxImage.src = imageSrc;
+            lightboxImage.alt = caption;
+            lightboxCaption.textContent = caption;
+            lightbox.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        document.getElementById('close-lightbox').addEventListener('click', closeLightbox);
+        document.getElementById('lightbox').addEventListener('click', (e) => {
+            if (e.target === e.currentTarget) {
+                closeLightbox();
+            }
+        });
+
+        // Form validation
+        const contactForm = document.getElementById('contact-form');
+        const inputs = contactForm.querySelectorAll('input, select, textarea');
+
+        function validateField(field) {
+            const errorDiv = field.parentNode.querySelector('.error-message');
+            let isValid = true;
+            let errorMessage = '';
+
+            if (field.hasAttribute('required') && !field.value.trim()) {
+                isValid = false;
+                errorMessage = 'Este campo es requerido';
+            } else if (field.type === 'email' && field.value) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(field.value)) {
+                    isValid = false;
+                    errorMessage = 'Por favor ingrese un correo electrónico válido';
+                }
+            } else if (field.type === 'tel' && field.value) {
+                const phoneRegex = /^[\+]?[1-9][\d]{0,15}$/;
+                if (!phoneRegex.test(field.value.replace(/\s/g, ''))) {
+                    isValid = false;
+                    errorMessage = 'Por favor ingrese un número de teléfono válido';
+                }
+            }
+
+            if (isValid) {
+                field.classList.remove('border-error');
+                field.classList.add('border-success');
+                errorDiv.classList.add('hidden');
+            } else {
+                field.classList.remove('border-success');
+                field.classList.add('border-error');
+                errorDiv.textContent = errorMessage;
+                errorDiv.classList.remove('hidden');
+            }
+
+            return isValid;
+        }
+
+        inputs.forEach(input => {
+            input.addEventListener('blur', () => validateField(input));
+            input.addEventListener('input', () => {
+                if (input.classList.contains('border-error')) {
+                    validateField(input);
+                }
+            });
+        });
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            let isFormValid = true;
+            inputs.forEach(input => {
+                if (!validateField(input)) {
+                    isFormValid = false;
+                }
+            });
+
+            if (isFormValid) {
+                // Simulate form submission
+                const submitBtn = contactForm.querySelector('button[type="submit"]');
+                const originalText = submitBtn.textContent;
+                submitBtn.textContent = 'Enviando...';
+                submitBtn.disabled = true;
+
+                setTimeout(() => {
+                    alert('¡Gracias por su mensaje! Nos pondremos en contacto pronto.');
+                    contactForm.reset();
+                    inputs.forEach(input => {
+                        input.classList.remove('border-success', 'border-error');
+                    });
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                }, 2000);
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('shadow-medium');
+            } else {
+                header.classList.remove('shadow-medium');
+            }
+        });
+    </script>
+</body>
+</html>
