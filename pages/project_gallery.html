@@ -7,50 +7,49 @@
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
+    <script src="/JS/project_gallery.js" defer></script>
 </head>
 <body class="bg-background text-text-primary">
-    <!-- Header Section -->
-    <header class="sticky top-0 z-50 bg-surface shadow-light border-b border-border">
-        <div class="container mx-auto px-4 py-4">
-            <div class="flex items-center justify-between">
-                <!-- Logo -->
-                <div class="flex items-center space-x-2">
-                    <svg class="w-10 h-10 text-primary" viewBox="0 0 40 40" fill="currentColor">
-                        <path d="M20 2L4 8v12c0 10.55 7.84 19.24 18 21 10.16-1.76 18-10.45 18-21V8L20 2zm-2 18h-6v-2h6v-6h2v6h6v2h-6v6h-2v-6z"/>
-                    </svg>
-                    <span class="text-2xl font-heading font-bold text-primary">Construction Pro</span>
-                </div>
-
-                <!-- Desktop Navigation -->
-                <nav class="hidden md:flex items-center space-x-8">
-                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Home</a>
-                    <a href="services_detail.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Services</a>
-                    <a href="project_gallery.html" class="text-text-primary hover:text-primary transition-colors duration-200 font-semibold">Projects</a>
-                    <a href="about_us.html" class="text-text-secondary hover:text-primary transition-colors duration-200">About Us</a>
-                    <a href="contact.html" class="btn-secondary">Contact</a>
-                </nav>
-
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-md hover:bg-gray-100 transition-colors duration-200">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
-                </button>
+   <!-- Header Section -->
+  <header class="sticky top-0 z-50 bg-surface shadow-light border-b border-border">
+    <div class="container mx-auto px-4 py-4">
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <img src="../Images/Logo.png" alt="Logo Corporación CAMIL" class="h-16 w-auto" />
+                <span class="text-2xl font-heading font-bold text-primary">Corporación CAMIL</span>
             </div>
 
-            <!-- Mobile Navigation -->
-            <nav id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-border pt-4">
-                <div class="flex flex-col space-y-4">
-                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Home</a>
-                    <a href="services_detail.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Services</a>
-                    <a href="project_gallery.html" class="text-text-primary hover:text-primary transition-colors duration-200 font-semibold">Projects</a>
-                    <a href="about_us.html" class="text-text-secondary hover:text-primary transition-colors duration-200">About Us</a>
-                    <a href="contact.html" class="btn-secondary inline-block text-center">Contact</a>
-                </div>
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="homepage.html" class="text-text-primary hover:text-primary transition-colors duration-200 font-semibold">Inicio</a>
+                <a href="services_detail.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Servicios</a>
+                <a href="project_gallery.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Proyectos</a>
+                <a href="about_us.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Nosotros</a>
+                <a href="contact.html" class="btn-secondary">Contacto</a>
             </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 rounded-md hover:bg-gray-100 transition-colors duration-200">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
         </div>
-    </header>
+
+        <!-- Mobile Navigation -->
+        <nav id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-border pt-4">
+            <div class="flex flex-col space-y-4">
+                <a href="homepage.html" class="text-text-primary hover:text-primary transition-colors duration-200 font-semibold">Inicio</a>
+                <a href="services_detail.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Servicios</a>
+                <a href="project_gallery.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Proyectos</a>
+                <a href="about_us.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Nosotros</a>
+                <a href="contact.html" class="btn-secondary inline-block text-center">Contacto</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
 
     <!-- Breadcrumb -->
     <section class="bg-surface border-b border-border py-4">
@@ -65,69 +64,69 @@
         </div>
     </section>
 
-    <!-- Page Header -->
+<!-- Encabezado de Página -->
     <section class="py-16 bg-surface">
         <div class="container mx-auto px-4 text-center">
-            <h1 class="text-fluid-4xl font-heading font-bold text-text-primary mb-4">Our Project Gallery</h1>
+            <h1 class="text-fluid-4xl font-heading font-bold text-text-primary mb-4">Nuestra Galería de Proyectos</h1>
             <p class="text-fluid-lg text-text-secondary max-w-2xl mx-auto">
-                Explore our portfolio of completed construction projects showcasing quality craftsmanship and innovative design solutions.
+                Explora nuestro portafolio de proyectos de construcción completados que demuestran calidad artesanal y soluciones de diseño innovadoras.
             </p>
         </div>
     </section>
 
-    <!-- Filter and Search Section -->
+    <!-- Sección de Filtros y Búsqueda -->
     <section class="py-8 bg-background border-b border-border">
         <div class="container mx-auto px-4">
             <div class="flex flex-col lg:flex-row gap-6 items-start lg:items-center justify-between">
-                <!-- Search Bar -->
+                <!-- Barra de Búsqueda -->
                 <div class="relative flex-1 max-w-md">
-                    <input type="text" id="search-input" placeholder="Search projects..." class="form-input pl-10 pr-4" />
+                    <input type="text" id="search-input" placeholder="Buscar proyectos..." class="form-input pl-10 pr-4" />
                     <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
                     </svg>
                 </div>
 
-                <!-- Filter Chips -->
+                <!-- Chips de Filtro -->
                 <div class="flex flex-wrap gap-3">
                     <button class="filter-chip active" data-filter="all">
-                        All Projects
+                        Todos los Proyectos
                     </button>
                     <button class="filter-chip" data-filter="residential">
-                        Residential
+                        Residencial
                     </button>
-                    <button class="filter-chip" data-filter="commercial">
-                        Commercial
+                    <button class="filter-chip" data-filter="Comida">
+                        Comida
                     </button>
                     <button class="filter-chip" data-filter="remodeling">
-                        Remodeling
+                        Remodelación
                     </button>
                     <button class="filter-chip" data-filter="supervision">
-                        Supervision
+                        Supervisión
                     </button>
                 </div>
 
-                <!-- Reset Filter Button -->
+                <!-- Botón Restablecer Filtros -->
                 <button id="reset-filters" class="flex items-center space-x-2 text-text-secondary hover:text-primary transition-colors duration-200">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
                     </svg>
-                    <span>Reset</span>
+                    <span>Restablecer</span>
                 </button>
             </div>
         </div>
     </section>
 
-    <!-- Projects Grid -->
+    <!-- Cuadrícula de Proyectos -->
     <section class="py-12 bg-background">
         <div class="container mx-auto px-4">
             <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                <!-- Project Card 1 -->
-                <div class="project-card group cursor-pointer" data-category="residential" data-year="2024" data-title="Modern Family Home">
+                <!-- Tarjeta de Proyecto 1 -->
+                <div class="project-card group cursor-pointer" data-category="residential" data-year="2024" data-title="Casa Familiar Moderna">
                     <div class="relative overflow-hidden rounded-lg shadow-medium group-hover:shadow-large transition-all duration-300">
-                        <img src="https://images.pixabay.com/photo/2016/11/29/03/53/house-1867187_1280.jpg" alt="Modern Family Home" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <img src="https://images.pixabay.com/photo/2016/11/29/03/53/house-1867187_1280.jpg" alt="Casa Familiar Moderna" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
                         <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
                         <div class="absolute top-4 left-4">
-                            <span class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">Residential</span>
+                            <span class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">Residencial</span>
                         </div>
                         <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -136,12 +135,12 @@
                         </div>
                     </div>
                     <div class="mt-4">
-                        <h3 class="text-fluid-lg font-heading font-semibold mb-2">Modern Family Home</h3>
-                        <p class="text-text-secondary text-sm mb-2">Completed: March 2024</p>
-                        <p class="text-text-secondary">Contemporary residential construction with sustainable materials and energy-efficient design.</p>
+                        <h3 class="text-fluid-lg font-heading font-semibold mb-2">Casa Familiar Moderna</h3>
+                        <p class="text-text-secondary text-sm mb-2">Completado: Marzo 2024</p>
+                        <p class="text-text-secondary">Construcción residencial contemporánea con materiales sostenibles y diseño energéticamente eficiente.</p>
                         <div class="mt-3 flex items-center justify-between">
                             <span class="text-accent font-semibold">$450,000</span>
-                            <button class="share-btn text-text-secondary hover:text-primary transition-colors duration-200" data-title="Modern Family Home">
+                            <button class="share-btn text-text-secondary hover:text-primary transition-colors duration-200" data-title="Casa Familiar Moderna">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z"/>
                                 </svg>
@@ -150,13 +149,13 @@
                     </div>
                 </div>
 
-                <!-- Project Card 2 -->
-                <div class="project-card group cursor-pointer" data-category="commercial" data-year="2024" data-title="Office Complex Downtown">
+                <!-- Tarjeta de Proyecto 2 -->
+                <div class="project-card group cursor-pointer" data-category="commercial" data-year="2024" data-title="Complejo de Oficinas Centro">
                     <div class="relative overflow-hidden rounded-lg shadow-medium group-hover:shadow-large transition-all duration-300">
-                        <img src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Office Complex Downtown" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <img src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Complejo de Oficinas Centro" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
                         <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
                         <div class="absolute top-4 left-4">
-                            <span class="bg-secondary text-white px-3 py-1 rounded-full text-sm font-semibold">Commercial</span>
+                            <span class="bg-secondary text-white px-3 py-1 rounded-full text-sm font-semibold">Comercial</span>
                         </div>
                         <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -165,12 +164,12 @@
                         </div>
                     </div>
                     <div class="mt-4">
-                        <h3 class="text-fluid-lg font-heading font-semibold mb-2">Office Complex Downtown</h3>
-                        <p class="text-text-secondary text-sm mb-2">Completed: January 2024</p>
-                        <p class="text-text-secondary">Multi-story commercial complex with modern amenities and smart building technology.</p>
+                        <h3 class="text-fluid-lg font-heading font-semibold mb-2">Complejo de Oficinas Centro</h3>
+                        <p class="text-text-secondary text-sm mb-2">Completado: Enero 2024</p>
+                        <p class="text-text-secondary">Complejo comercial de múltiples pisos con amenidades modernas y tecnología de edificio inteligente.</p>
                         <div class="mt-3 flex items-center justify-between">
                             <span class="text-accent font-semibold">$2.1M</span>
-                            <button class="share-btn text-text-secondary hover:text-primary transition-colors duration-200" data-title="Office Complex Downtown">
+                            <button class="share-btn text-text-secondary hover:text-primary transition-colors duration-200" data-title="Complejo de Oficinas Centro">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z"/>
                                 </svg>
@@ -179,13 +178,13 @@
                     </div>
                 </div>
 
-                <!-- Project Card 3 -->
-                <div class="project-card group cursor-pointer" data-category="remodeling" data-year="2023" data-title="Luxury Kitchen Renovation">
+                <!-- Tarjeta de Proyecto 3 -->
+                <div class="project-card group cursor-pointer" data-category="remodeling" data-year="2023" data-title="Renovación de Cocina de Lujo">
                     <div class="relative overflow-hidden rounded-lg shadow-medium group-hover:shadow-large transition-all duration-300">
-                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&w=800" alt="Luxury Kitchen Renovation" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&w=800" alt="Renovación de Cocina de Lujo" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
                         <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
                         <div class="absolute top-4 left-4">
-                            <span class="bg-accent text-white px-3 py-1 rounded-full text-sm font-semibold">Remodeling</span>
+                            <span class="bg-accent text-white px-3 py-1 rounded-full text-sm font-semibold">Remodelación</span>
                         </div>
                         <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -194,12 +193,12 @@
                         </div>
                     </div>
                     <div class="mt-4">
-                        <h3 class="text-fluid-lg font-heading font-semibold mb-2">Luxury Kitchen Renovation</h3>
-                        <p class="text-text-secondary text-sm mb-2">Completed: December 2023</p>
-                        <p class="text-text-secondary">Complete kitchen remodel with custom cabinetry, marble countertops, and premium appliances.</p>
+                        <h3 class="text-fluid-lg font-heading font-semibold mb-2">Renovación de Cocina de Lujo</h3>
+                        <p class="text-text-secondary text-sm mb-2">Completado: Diciembre 2023</p>
+                        <p class="text-text-secondary">Remodelación completa de cocina con gabinetes personalizados, encimeras de mármol y electrodomésticos de primera calidad.</p>
                         <div class="mt-3 flex items-center justify-between">
                             <span class="text-accent font-semibold">$85,000</span>
-                            <button class="share-btn text-text-secondary hover:text-primary transition-colors duration-200" data-title="Luxury Kitchen Renovation">
+                            <button class="share-btn text-text-secondary hover:text-primary transition-colors duration-200" data-title="Renovación de Cocina de Lujo">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z"/>
                                 </svg>
@@ -208,13 +207,13 @@
                     </div>
                 </div>
 
-                <!-- Project Card 4 -->
-                <div class="project-card group cursor-pointer" data-category="residential" data-year="2023" data-title="Suburban Villa Construction">
+                <!-- Tarjeta de Proyecto 4 -->
+                <div class="project-card group cursor-pointer" data-category="residential" data-year="2023" data-title="Construcción Villa Suburbana">
                     <div class="relative overflow-hidden rounded-lg shadow-medium group-hover:shadow-large transition-all duration-300">
-                        <img src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Suburban Villa Construction" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <img src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Construcción Villa Suburbana" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
                         <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
                         <div class="absolute top-4 left-4">
-                            <span class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">Residential</span>
+                            <span class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">Residencial</span>
                         </div>
                         <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -223,12 +222,12 @@
                         </div>
                     </div>
                     <div class="mt-4">
-                        <h3 class="text-fluid-lg font-heading font-semibold mb-2">Suburban Villa Construction</h3>
-                        <p class="text-text-secondary text-sm mb-2">Completed: October 2023</p>
-                        <p class="text-text-secondary">Elegant suburban villa with traditional architecture and modern interior design.</p>
+                        <h3 class="text-fluid-lg font-heading font-semibold mb-2">Construcción Villa Suburbana</h3>
+                        <p class="text-text-secondary text-sm mb-2">Completado: Octubre 2023</p>
+                        <p class="text-text-secondary">Elegante villa suburbana con arquitectura tradicional y diseño interior moderno.</p>
                         <div class="mt-3 flex items-center justify-between">
                             <span class="text-accent font-semibold">$650,000</span>
-                            <button class="share-btn text-text-secondary hover:text-primary transition-colors duration-200" data-title="Suburban Villa Construction">
+                            <button class="share-btn text-text-secondary hover:text-primary transition-colors duration-200" data-title="Construcción Villa Suburbana">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z"/>
                                 </svg>
@@ -237,13 +236,13 @@
                     </div>
                 </div>
 
-                <!-- Project Card 5 -->
-                <div class="project-card group cursor-pointer" data-category="supervision" data-year="2023" data-title="Retail Store Supervision">
+<!-- Tarjeta de Proyecto 5 -->
+                <div class="project-card group cursor-pointer" data-category="supervision" data-year="2023" data-title="Supervisión Tienda Minorista">
                     <div class="relative overflow-hidden rounded-lg shadow-medium group-hover:shadow-large transition-all duration-300">
-                        <img src="https://images.pixabay.com/photo/2016/11/22/19/15/hand-1850120_1280.jpg" alt="Retail Store Supervision" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <img src="https://images.pixabay.com/photo/2016/11/22/19/15/hand-1850120_1280.jpg" alt="Supervisión Tienda Minorista" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
                         <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
                         <div class="absolute top-4 left-4">
-                            <span class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">Supervision</span>
+                            <span class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">Supervisión</span>
                         </div>
                         <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -252,12 +251,12 @@
                         </div>
                     </div>
                     <div class="mt-4">
-                        <h3 class="text-fluid-lg font-heading font-semibold mb-2">Retail Store Supervision</h3>
-                        <p class="text-text-secondary text-sm mb-2">Completed: September 2023</p>
-                        <p class="text-text-secondary">Professional project supervision for retail store construction with quality assurance.</p>
+                        <h3 class="text-fluid-lg font-heading font-semibold mb-2">Supervisión Tienda Minorista</h3>
+                        <p class="text-text-secondary text-sm mb-2">Completado: Septiembre 2023</p>
+                        <p class="text-text-secondary">Supervisión profesional de proyecto para construcción de tienda minorista con aseguramiento de calidad.</p>
                         <div class="mt-3 flex items-center justify-between">
                             <span class="text-accent font-semibold">$25,000</span>
-                            <button class="share-btn text-text-secondary hover:text-primary transition-colors duration-200" data-title="Retail Store Supervision">
+                            <button class="share-btn text-text-secondary hover:text-primary transition-colors duration-200" data-title="Supervisión Tienda Minorista">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z"/>
                                 </svg>
@@ -266,13 +265,13 @@
                     </div>
                 </div>
 
-                <!-- Project Card 6 -->
-                <div class="project-card group cursor-pointer" data-category="remodeling" data-year="2023" data-title="Bathroom Renovation">
+                <!-- Tarjeta de Proyecto 6 -->
+                <div class="project-card group cursor-pointer" data-category="remodeling" data-year="2023" data-title="Renovación de Baño">
                     <div class="relative overflow-hidden rounded-lg shadow-medium group-hover:shadow-large transition-all duration-300">
-                        <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?ixlib=rb-4.0.3&w=800" alt="Bathroom Renovation" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?ixlib=rb-4.0.3&w=800" alt="Renovación de Baño" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
                         <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
                         <div class="absolute top-4 left-4">
-                            <span class="bg-accent text-white px-3 py-1 rounded-full text-sm font-semibold">Remodeling</span>
+                            <span class="bg-accent text-white px-3 py-1 rounded-full text-sm font-semibold">Remodelación</span>
                         </div>
                         <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -281,12 +280,12 @@
                         </div>
                     </div>
                     <div class="mt-4">
-                        <h3 class="text-fluid-lg font-heading font-semibold mb-2">Bathroom Renovation</h3>
-                        <p class="text-text-secondary text-sm mb-2">Completed: August 2023</p>
-                        <p class="text-text-secondary">Modern bathroom renovation with luxury fixtures and contemporary tile work.</p>
+                        <h3 class="text-fluid-lg font-heading font-semibold mb-2">Renovación de Baño</h3>
+                        <p class="text-text-secondary text-sm mb-2">Completado: Agosto 2023</p>
+                        <p class="text-text-secondary">Renovación moderna de baño con accesorios de lujo y trabajo de azulejos contemporáneo.</p>
                         <div class="mt-3 flex items-center justify-between">
                             <span class="text-accent font-semibold">$35,000</span>
-                            <button class="share-btn text-text-secondary hover:text-primary transition-colors duration-200" data-title="Bathroom Renovation">
+                            <button class="share-btn text-text-secondary hover:text-primary transition-colors duration-200" data-title="Renovación de Baño">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z"/>
                                 </svg>
@@ -295,13 +294,13 @@
                     </div>
                 </div>
 
-                <!-- Project Card 7 -->
-                <div class="project-card group cursor-pointer" data-category="commercial" data-year="2022" data-title="Warehouse Construction">
+                <!-- Tarjeta de Proyecto 7 -->
+                <div class="project-card group cursor-pointer" data-category="commercial" data-year="2022" data-title="Construcción de Almacén">
                     <div class="relative overflow-hidden rounded-lg shadow-medium group-hover:shadow-large transition-all duration-300">
-                        <img src="https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Warehouse Construction" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <img src="https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Construcción de Almacén" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
                         <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
                         <div class="absolute top-4 left-4">
-                            <span class="bg-secondary text-white px-3 py-1 rounded-full text-sm font-semibold">Commercial</span>
+                            <span class="bg-secondary text-white px-3 py-1 rounded-full text-sm font-semibold">Comercial</span>
                         </div>
                         <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -310,12 +309,12 @@
                         </div>
                     </div>
                     <div class="mt-4">
-                        <h3 class="text-fluid-lg font-heading font-semibold mb-2">Warehouse Construction</h3>
-                        <p class="text-text-secondary text-sm mb-2">Completed: November 2022</p>
-                        <p class="text-text-secondary">Large-scale warehouse facility with advanced logistics infrastructure and loading docks.</p>
+                        <h3 class="text-fluid-lg font-heading font-semibold mb-2">Construcción de Almacén</h3>
+                        <p class="text-text-secondary text-sm mb-2">Completado: Noviembre 2022</p>
+                        <p class="text-text-secondary">Instalación de almacén a gran escala con infraestructura logística avanzada y muelles de carga.</p>
                         <div class="mt-3 flex items-center justify-between">
                             <span class="text-accent font-semibold">$1.8M</span>
-                            <button class="share-btn text-text-secondary hover:text-primary transition-colors duration-200" data-title="Warehouse Construction">
+                            <button class="share-btn text-text-secondary hover:text-primary transition-colors duration-200" data-title="Construcción de Almacén">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z"/>
                                 </svg>
@@ -324,13 +323,13 @@
                     </div>
                 </div>
 
-                <!-- Project Card 8 -->
-                <div class="project-card group cursor-pointer" data-category="residential" data-year="2022" data-title="Townhouse Development">
+                <!-- Tarjeta de Proyecto 8 -->
+                <div class="project-card group cursor-pointer" data-category="residential" data-year="2022" data-title="Desarrollo de Casas Adosadas">
                     <div class="relative overflow-hidden rounded-lg shadow-medium group-hover:shadow-large transition-all duration-300">
-                        <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&w=800" alt="Townhouse Development" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&w=800" alt="Desarrollo de Casas Adosadas" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
                         <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
                         <div class="absolute top-4 left-4">
-                            <span class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">Residential</span>
+                            <span class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">Residencial</span>
                         </div>
                         <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -339,12 +338,12 @@
                         </div>
                     </div>
                     <div class="mt-4">
-                        <h3 class="text-fluid-lg font-heading font-semibold mb-2">Townhouse Development</h3>
-                        <p class="text-text-secondary text-sm mb-2">Completed: September 2022</p>
-                        <p class="text-text-secondary">Multi-unit townhouse development with shared amenities and sustainable design features.</p>
+                        <h3 class="text-fluid-lg font-heading font-semibold mb-2">Desarrollo de Casas Adosadas</h3>
+                        <p class="text-text-secondary text-sm mb-2">Completado: Septiembre 2022</p>
+                        <p class="text-text-secondary">Desarrollo de casas adosadas de múltiples unidades con amenidades compartidas y características de diseño sostenible.</p>
                         <div class="mt-3 flex items-center justify-between">
                             <span class="text-accent font-semibold">$1.2M</span>
-                            <button class="share-btn text-text-secondary hover:text-primary transition-colors duration-200" data-title="Townhouse Development">
+                            <button class="share-btn text-text-secondary hover:text-primary transition-colors duration-200" data-title="Desarrollo de Casas Adosadas">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z"/>
                                 </svg>
@@ -354,54 +353,52 @@
                 </div>
             </div>
 
-            <!-- Load More Button -->
+            <!-- Botón Cargar Más -->
             <div class="text-center mt-12">
                 <button id="load-more-btn" class="btn-primary">
-                    Load More Projects
+                    Cargar Más Proyectos
                 </button>
             </div>
 
-            <!-- No Results Message -->
+            <!-- Mensaje Sin Resultados -->
             <div id="no-results" class="hidden text-center py-12">
                 <svg class="w-16 h-16 text-text-secondary mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 12h6m-6-4h6m2 5.291A7.962 7.962 0 0112 15c-2.34 0-4.29-1.009-5.824-2.562M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
                 </svg>
-                <h3 class="text-fluid-xl font-heading font-semibold mb-2">No Projects Found</h3>
-                <p class="text-text-secondary">Try adjusting your search criteria or filters to find more projects.</p>
+                <h3 class="text-fluid-xl font-heading font-semibold mb-2">No Se Encontraron Proyectos</h3>
+                <p class="text-text-secondary">Intenta ajustar tus criterios de búsqueda o filtros para encontrar más proyectos.</p>
             </div>
         </div>
     </section>
 
-    <!-- Call to Action Section -->
+
+<!-- Sección de Llamada a la Acción -->
     <section class="py-20 bg-primary text-white">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-fluid-3xl font-heading font-bold mb-4">Ready to Start Your Project?</h2>
+            <h2 class="text-fluid-3xl font-heading font-bold mb-4">¿Listo para Comenzar tu Proyecto?</h2>
             <p class="text-fluid-lg mb-8 max-w-2xl mx-auto opacity-90">
-                Let's discuss your construction needs and create something amazing together. Contact us today for a free consultation.
+                Hablemos sobre tus necesidades de construcción y creemos algo increíble juntos. Contáctanos hoy para una consulta gratuita.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="contact.html" class="bg-white text-primary px-8 py-4 rounded-md font-semibold hover:bg-gray-100 transition-all duration-200 inline-block">
-                    Get Free Quote
+                    Obtener Cotización Gratuita
                 </a>
                 <a href="services_detail.html" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-md font-semibold hover:bg-white hover:text-primary transition-all duration-200 inline-block">
-                    View Services
+                    Ver Servicios
                 </a>
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
+ <!-- Footer -->
     <footer class="bg-text-primary text-white py-12">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
                     <div class="flex items-center space-x-2 mb-4">
-                        <svg class="w-8 h-8 text-secondary" viewBox="0 0 40 40" fill="currentColor">
-                            <path d="M20 2L4 8v12c0 10.55 7.84 19.24 18 21 10.16-1.76 18-10.45 18-21V8L20 2zm-2 18h-6v-2h6v-6h2v6h6v2h-6v6h-2v-6z"/>
-                        </svg>
-                        <span class="text-xl font-heading font-bold">Construction Pro</span>
+                        <img src="../Images/Logo.png" alt="Logo Corporación CAMIL" class="h-8 w-auto" />
+                        <span class="text-xl font-heading font-bold">Corporación CAMIL</span>
                     </div>
-                    <p class="text-gray-300 mb-4">Building dreams into reality with quality craftsmanship and professional service.</p>
+                    <p class="text-gray-300 mb-4">Construyendo sueños en realidad con calidad profesional y servicio excepcional.</p>
                     <div class="flex space-x-4">
                         <a href="#" class="text-gray-300 hover:text-secondary transition-colors duration-200">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -422,38 +419,38 @@
                 </div>
                 
                 <div>
-                    <h3 class="text-lg font-heading font-semibold mb-4">Services</h3>
+                    <h3 class="text-lg font-heading font-semibold mb-4">Servicios</h3>
                     <ul class="space-y-2">
-                        <li><a href="services_detail.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Residential Construction</a></li>
-                        <li><a href="services_detail.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Commercial Construction</a></li>
-                        <li><a href="services_detail.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Remodeling</a></li>
-                        <li><a href="services_detail.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Construction Supervision</a></li>
+                        <li><a href="services_detail.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Construcción General</a></li>
+                        <li><a href="services_detail.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Infraestructura Vial</a></li>
+                        <li><a href="services_detail.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Infraestructura Hidráulica</a></li>
+                        <li><a href="services_detail.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Servicios Especializados</a></li>
                     </ul>
                 </div>
                 
                 <div>
-                    <h3 class="text-lg font-heading font-semibold mb-4">Company</h3>
+                    <h3 class="text-lg font-heading font-semibold mb-4">Empresa</h3>
                     <ul class="space-y-2">
-                        <li><a href="about_us.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">About Us</a></li>
-                        <li><a href="project_gallery.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Projects</a></li>
-                        <li><a href="contact.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Contact</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-secondary transition-colors duration-200">Careers</a></li>
+                        <li><a href="about_us.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Nosotros</a></li>
+                        <li><a href="project_gallery.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Proyectos</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Contacto</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-secondary transition-colors duration-200">Carreras</a></li>
                     </ul>
                 </div>
                 
                 <div>
-                    <h3 class="text-lg font-heading font-semibold mb-4">Contact Info</h3>
+                    <h3 class="text-lg font-heading font-semibold mb-4">Información de Contacto</h3>
                     <div class="space-y-2 text-gray-300">
-                        <p>123 Construction Ave</p>
-                        <p>Building City, BC 12345</p>
-                        <p>(555) 123-4567</p>
-                        <p>info@constructionpro.com</p>
+                        <p>San Salvador</p>
+                        <p>El Salvador</p>
+                        <p>(503) 2XXX-XXXX</p>
+                        <p>info@corporacioncamil.com</p>
                     </div>
                 </div>
             </div>
             
             <div class="border-t border-gray-700 mt-8 pt-8 text-center">
-                <p class="text-gray-300">© 2025 Construction Pro. All Rights Reserved.</p>
+                <p class="text-gray-300">© 2025 Corporación CAMIL. Todos los Derechos Reservados.</p>
             </div>
         </div>
     </footer>
@@ -565,240 +562,5 @@
             @apply opacity-100 ring-2 ring-primary;
         }
     </style>
-
-    <script>
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Filter functionality
-        const filterChips = document.querySelectorAll('.filter-chip');
-        const projectCards = document.querySelectorAll('.project-card');
-        const searchInput = document.getElementById('search-input');
-        const resetBtn = document.getElementById('reset-filters');
-        const noResults = document.getElementById('no-results');
-
-        let currentFilter = 'all';
-        let currentSearch = '';
-
-        function filterProjects() {
-            let visibleCount = 0;
-            
-            projectCards.forEach(card => {
-                const category = card.dataset.category;
-                const title = card.dataset.title.toLowerCase();
-                
-                const matchesFilter = currentFilter === 'all' || category === currentFilter;
-                const matchesSearch = currentSearch === '' || title.includes(currentSearch.toLowerCase());
-                
-                if (matchesFilter && matchesSearch) {
-                    card.classList.remove('hidden');
-                    visibleCount++;
-                } else {
-                    card.classList.add('hidden');
-                }
-            });
-            
-            noResults.classList.toggle('hidden', visibleCount > 0);
-        }
-
-        filterChips.forEach(chip => {
-            chip.addEventListener('click', () => {
-                filterChips.forEach(c => c.classList.remove('active'));
-                chip.classList.add('active');
-                currentFilter = chip.dataset.filter;
-                filterProjects();
-            });
-        });
-
-        searchInput.addEventListener('input', (e) => {
-            currentSearch = e.target.value;
-            filterProjects();
-        });
-
-        resetBtn.addEventListener('click', () => {
-            currentFilter = 'all';
-            currentSearch = '';
-            searchInput.value = '';
-            filterChips.forEach(c => c.classList.remove('active'));
-            filterChips[0].classList.add('active');
-            filterProjects();
-        });
-
-        // Lightbox functionality
-        const lightbox = document.getElementById('lightbox');
-        const lightboxMainImage = document.getElementById('lightbox-main-image');
-        const lightboxTitle = document.getElementById('lightbox-title');
-        const lightboxDate = document.getElementById('lightbox-date');
-        const lightboxValue = document.getElementById('lightbox-value');
-        const lightboxCategory = document.getElementById('lightbox-category');
-        const lightboxDescription = document.getElementById('lightbox-description');
-        const lightboxThumbs = document.querySelectorAll('.lightbox-thumb');
-
-        // Project data for lightbox
-        const projectData = {
-            'Modern Family Home': {
-                images: [
-                    'https://images.pixabay.com/photo/2016/11/29/03/53/house-1867187_1280.jpg',
-                    'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800',
-                    'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&w=800'
-                ],
-                date: 'March 2024',
-                value: '$450,000',
-                category: 'Residential',
-                description: 'Contemporary residential construction with sustainable materials and energy-efficient design features. This project showcases modern architecture with smart home integration.'
-            },
-            'Office Complex Downtown': {
-                images: [
-                    'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800',
-                    'https://images.pixabay.com/photo/2016/11/29/03/53/house-1867187_1280.jpg',
-                    'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&w=800'
-                ],
-                date: 'January 2024',
-                value: '$2.1M',
-                category: 'Commercial',
-                description: 'Multi-story commercial complex with modern amenities and smart building technology. Features include advanced HVAC systems and sustainable construction practices.'
-            }
-        };
-
-        projectCards.forEach(card => {
-            card.addEventListener('click', () => {
-                const title = card.dataset.title;
-                const data = projectData[title] || projectData['Modern Family Home'];
-                
-                lightboxTitle.textContent = title;
-                lightboxDate.textContent = data.date;
-                lightboxValue.textContent = data.value;
-                lightboxCategory.textContent = data.category;
-                lightboxDescription.textContent = data.description;
-                
-                // Set category color
-                lightboxCategory.className = `px-3 py-1 rounded-full text-sm text-white ${
-                    data.category === 'Residential' ? 'bg-primary' :
-                    data.category === 'Commercial' ? 'bg-secondary' :
-                    data.category === 'Remodeling' ? 'bg-accent' : 'bg-primary'
-                }`;
-                
-                // Set main image
-                lightboxMainImage.src = data.images[0];
-                lightboxMainImage.alt = title;
-                
-                // Update thumbnails
-                lightboxThumbs.forEach((thumb, index) => {
-                    if (data.images[index]) {
-                        thumb.src = data.images[index];
-                        thumb.classList.remove('hidden');
-                        thumb.classList.toggle('active', index === 0);
-                    } else {
-                        thumb.classList.add('hidden');
-                    }
-                });
-                
-                lightbox.classList.remove('hidden');
-                document.body.style.overflow = 'hidden';
-            });
-        });
-
-        // Thumbnail click handlers
-        lightboxThumbs.forEach(thumb => {
-            thumb.addEventListener('click', () => {
-                lightboxThumbs.forEach(t => t.classList.remove('active'));
-                thumb.classList.add('active');
-                lightboxMainImage.src = thumb.src;
-            });
-        });
-
-        function closeLightbox() {
-            lightbox.classList.add('hidden');
-            document.body.style.overflow = 'auto';
-        }
-
-        document.getElementById('close-lightbox').addEventListener('click', closeLightbox);
-        lightbox.addEventListener('click', (e) => {
-            if (e.target === lightbox) {
-                closeLightbox();
-            }
-        });
-
-        // Share functionality
-        document.querySelectorAll('.share-btn').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                e.stopPropagation();
-                const title = btn.dataset.title;
-                if (navigator.share) {
-                    navigator.share({
-                        title: `${title} - Construction Pro`,
-                        text: `Check out this amazing project: ${title}`,
-                        url: window.location.href
-                    });
-                } else {
-                    // Fallback for browsers that don't support Web Share API
-                    const url = encodeURIComponent(window.location.href);
-                    const text = encodeURIComponent(`Check out this amazing project: ${title}`);
-                    window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, '_blank');
-                }
-            });
-        });
-
-        // Load more functionality
-        const loadMoreBtn = document.getElementById('load-more-btn');
-        let currentPage = 1;
-        const projectsPerPage = 8;
-
-        loadMoreBtn.addEventListener('click', () => {
-            // Simulate loading more projects
-            loadMoreBtn.textContent = 'Loading...';
-            loadMoreBtn.disabled = true;
-            
-            setTimeout(() => {
-                // In a real application, you would fetch more projects from an API
-                loadMoreBtn.textContent = 'Load More Projects';
-                loadMoreBtn.disabled = false;
-                currentPage++;
-                
-                // Hide button after loading a few pages (simulate end of content)
-                if (currentPage > 3) {
-                    loadMoreBtn.style.display = 'none';
-                }
-            }, 1000);
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Add scroll effect to header
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.classList.add('shadow-medium');
-            } else {
-                header.classList.remove('shadow-medium');
-            }
-        });
-
-        // Keyboard navigation for lightbox
-        document.addEventListener('keydown', (e) => {
-            if (!lightbox.classList.contains('hidden')) {
-                if (e.key === 'Escape') {
-                    closeLightbox();
-                }
-            }
-        });
-    </script>
 </body>
 </html>

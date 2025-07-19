@@ -3,54 +3,53 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Services Detail - Construction Pro</title>
+    <title>Servicios - corporacioncamil</title>
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fconstructi6601back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.5"></script>
+    <script src="/JS/services_detail,js" defer></script>
 </head>
 <body class="bg-background text-text-primary">
     <!-- Header Section -->
-    <header class="sticky top-0 z-50 bg-surface shadow-light border-b border-border">
-        <div class="container mx-auto px-4 py-4">
-            <div class="flex items-center justify-between">
-                <!-- Logo -->
-                <div class="flex items-center space-x-2">
-                    <svg class="w-10 h-10 text-primary" viewBox="0 0 40 40" fill="currentColor">
-                        <path d="M20 2L4 8v12c0 10.55 7.84 19.24 18 21 10.16-1.76 18-10.45 18-21V8L20 2zm-2 18h-6v-2h6v-6h2v6h6v2h-6v6h-2v-6z"/>
-                    </svg>
-                    <span class="text-2xl font-heading font-bold text-primary">Construction Pro</span>
-                </div>
-
-                <!-- Desktop Navigation -->
-                <nav class="hidden md:flex items-center space-x-8">
-                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Home</a>
-                    <a href="services_detail.html" class="text-text-primary hover:text-primary transition-colors duration-200 font-semibold">Services</a>
-                    <a href="project_gallery.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Projects</a>
-                    <a href="about_us.html" class="text-text-secondary hover:text-primary transition-colors duration-200">About Us</a>
-                    <a href="contact.html" class="btn-secondary">Contact</a>
-                </nav>
-
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-md hover:bg-gray-100 transition-colors duration-200">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
-                </button>
+  <header class="sticky top-0 z-50 bg-surface shadow-light border-b border-border">
+    <div class="container mx-auto px-4 py-4">
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <img src="../Images/Logo.png" alt="Logo Corporación CAMIL" class="h-16 w-auto" />
+                <span class="text-2xl font-heading font-bold text-primary">Corporación CAMIL</span>
             </div>
 
-            <!-- Mobile Navigation -->
-            <nav id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-border pt-4">
-                <div class="flex flex-col space-y-4">
-                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Home</a>
-                    <a href="services_detail.html" class="text-text-primary hover:text-primary transition-colors duration-200 font-semibold">Services</a>
-                    <a href="project_gallery.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Projects</a>
-                    <a href="about_us.html" class="text-text-secondary hover:text-primary transition-colors duration-200">About Us</a>
-                    <a href="contact.html" class="btn-secondary inline-block text-center">Contact</a>
-                </div>
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="homepage.html" class="text-text-primary hover:text-primary transition-colors duration-200 font-semibold">Inicio</a>
+                <a href="services_detail.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Servicios</a>
+                <a href="project_gallery.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Proyectos</a>
+                <a href="about_us.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Nosotros</a>
+                <a href="contact.html" class="btn-secondary">Contacto</a>
             </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 rounded-md hover:bg-gray-100 transition-colors duration-200">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
         </div>
-    </header>
+
+        <!-- Mobile Navigation -->
+        <nav id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-border pt-4">
+            <div class="flex flex-col space-y-4">
+                <a href="homepage.html" class="text-text-primary hover:text-primary transition-colors duration-200 font-semibold">Inicio</a>
+                <a href="services_detail.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Servicios</a>
+                <a href="project_gallery.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Proyectos</a>
+                <a href="about_us.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Nosotros</a>
+                <a href="contact.html" class="btn-secondary inline-block text-center">Contacto</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
 
     <!-- Breadcrumb Navigation -->
     <section class="bg-surface border-b border-border py-4">
@@ -60,132 +59,132 @@
                 <svg class="w-4 h-4 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                 </svg>
-                <span class="text-text-secondary">Services</span>
+                <span class="text-text-secondary">Servicios</span>
                 <svg class="w-4 h-4 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                 </svg>
-                <span class="text-text-primary font-semibold" id="service-breadcrumb">Residential Construction</span>
+                <span class="text-text-primary font-semibold" id="service-breadcrumb">Nosotros</span>
             </nav>
         </div>
     </section>
 
-    <!-- Service Selection Tabs -->
+    <!-- Pestañas de Selección de Servicios -->
     <section class="bg-surface border-b border-border py-6">
         <div class="container mx-auto px-4">
             <div class="flex flex-wrap gap-4 justify-center">
-                <button class="service-tab active bg-primary text-white px-6 py-3 rounded-md font-semibold transition-all duration-200" data-service="residential">
-                    Residential Construction
+                <button class="service-tab active bg-primary text-white px-6 py-3 rounded-md font-semibold transition-all duration-200" data-service="construccion">
+                    Construcción Residencial
                 </button>
-                <button class="service-tab bg-gray-100 text-text-secondary px-6 py-3 rounded-md font-semibold hover:bg-gray-200 transition-all duration-200" data-service="commercial">
-                    Commercial Construction
+                <button class="service-tab bg-gray-100 text-text-secondary px-6 py-3 rounded-md font-semibold hover:bg-gray-200 transition-all duration-200" data-service="hidraulica">
+                    Construcción Comercial
                 </button>
-                <button class="service-tab bg-gray-100 text-text-secondary px-6 py-3 rounded-md font-semibold hover:bg-gray-200 transition-all duration-200" data-service="remodeling">
-                    Remodeling
+                <button class="service-tab bg-gray-100 text-text-secondary px-6 py-3 rounded-md font-semibold hover:bg-gray-200 transition-all duration-200" data-service="electrica">
+                    Remodelación
                 </button>
-                <button class="service-tab bg-gray-100 text-text-secondary px-6 py-3 rounded-md font-semibold hover:bg-gray-200 transition-all duration-200" data-service="supervision">
-                    Construction Supervision
+                <button class="service-tab bg-gray-100 text-text-secondary px-6 py-3 rounded-md font-semibold hover:bg-gray-200 transition-all duration-200" data-service="vial">
+                    Supervisión de Construcción
                 </button>
             </div>
         </div>
     </section>
 
-    <!-- Hero Section -->
+    <!-- Sección Hero -->
     <section class="relative py-20 overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img id="hero-image" src="https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" alt="Construction service" class="w-full h-full object-cover" loading="eager" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+            <img id="hero-image" src="https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" alt="Servicio de construcción" class="w-full h-full object-cover" loading="eager" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
             <div class="absolute inset-0 bg-black opacity-50"></div>
         </div>
         
         <div class="relative z-10 container mx-auto px-4 text-center text-white">
-            <h1 id="hero-title" class="text-fluid-4xl font-heading font-bold mb-6 animate-fade-in">
-                Residential Construction Services
-            </h1>
-            <p id="hero-description" class="text-fluid-xl mb-8 max-w-3xl mx-auto animate-slide-up">
-                Custom homes and residential projects built with precision, quality craftsmanship, and attention to every detail. From foundation to finish, we bring your dream home to life.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up">
+                <h1 id="hero-title" class="text-fluid-4xl font-heading font-bold mb-6 animate-fade-in">
+                Nuestros Servicios
+                </h1>
+                <p id="hero-description" class="text-fluid-xl mb-8 max-w-3xl mx-auto animate-slide-up">
+                 Soluciones integrales de construcción e infraestructura con los más altos estándares de calidad y profesionalismo. Comprometidos con la excelencia en cada proyecto.
+                </p>
+             <div class="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up">
                 <a href="contact.html" class="btn-secondary text-lg px-8 py-4 inline-block">
-                    Get Free Quote
+                    Obtener Cotización 
                 </a>
                 <a href="project_gallery.html" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-md font-semibold hover:bg-white hover:text-text-primary transition-all duration-200 inline-block">
-                    View Projects
+                    Ver Proyectos
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Main Content Area -->
-    <section class="py-20 bg-background">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
-                <!-- Main Content (8 columns on desktop) -->
-                <div class="lg:col-span-2">
-                    <!-- Service Overview -->
-                    <div class="card mb-8">
-                        <div class="accordion-header flex items-center justify-between cursor-pointer md:cursor-default" data-target="overview">
-                            <h2 class="text-fluid-2xl font-heading font-bold text-text-primary">Service Overview</h2>
-                            <svg class="w-6 h-6 text-text-secondary transform transition-transform duration-200 md:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                            </svg>
-                        </div>
-                        <div id="overview" class="accordion-content hidden md:block mt-6">
-                            <div id="service-overview" class="space-y-4 text-text-secondary">
-                                <p>Our residential construction services encompass everything from custom home building to major renovations. We work closely with homeowners, architects, and designers to create living spaces that reflect your unique vision and lifestyle needs.</p>
-                                <p>With over 15 years of experience in residential construction, we have developed streamlined processes that ensure quality results while maintaining clear communication throughout your project.</p>
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-                                    <div class="flex items-start space-x-3">
-                                        <div class="w-8 h-8 bg-accent-100 rounded-full flex items-center justify-center mt-1">
-                                            <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
-                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <h3 class="font-heading font-semibold text-text-primary">Custom Home Building</h3>
-                                            <p class="text-sm text-text-secondary">From ground up construction to your specifications</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-start space-x-3">
-                                        <div class="w-8 h-8 bg-accent-100 rounded-full flex items-center justify-center mt-1">
-                                            <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
-                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <h3 class="font-heading font-semibold text-text-primary">Home Additions</h3>
-                                            <p class="text-sm text-text-secondary">Expand your living space seamlessly</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-start space-x-3">
-                                        <div class="w-8 h-8 bg-accent-100 rounded-full flex items-center justify-center mt-1">
-                                            <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
-                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <h3 class="font-heading font-semibold text-text-primary">Foundation Work</h3>
-                                            <p class="text-sm text-text-secondary">Solid foundations for lasting structures</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-start space-x-3">
-                                        <div class="w-8 h-8 bg-accent-100 rounded-full flex items-center justify-center mt-1">
-                                            <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
-                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <h3 class="font-heading font-semibold text-text-primary">Structural Repairs</h3>
-                                            <p class="text-sm text-text-secondary">Expert structural assessment and repair</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<!-- Área de Contenido Principal -->
+<section class="py-20 bg-background">
+ <div class="container mx-auto px-4">
+     <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+         <!-- Contenido Principal (8 columnas en escritorio) -->
+         <div class="lg:col-span-2">
+             <!-- Resumen del Servicio -->
+             <div class="card mb-8">
+                 <div class="accordion-header flex items-center justify-between cursor-pointer md:cursor-default" data-target="overview">
+                     <h2 class="text-fluid-2xl font-heading font-bold text-text-primary">Resumen del Servicio</h2>
+                     <svg class="w-6 h-6 text-text-secondary transform transition-transform duration-200 md:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                     </svg>
+                 </div>
+                 <div id="overview" class="accordion-content hidden md:block mt-6">
+                     <div id="service-overview" class="space-y-4 text-text-secondary">
+                         <p>Nuestra empresa se especializa en brindar servicios de construcción e infraestructura de alta calidad. Nos dedicamos a proyectos que requieren precisión técnica y cumplimiento de los más altos estándares de la industria.</p>
+                         <p>Con años de experiencia en el sector, hemos desarrollado procesos eficientes que garantizan la entrega de proyectos en tiempo y forma, manteniendo siempre la comunicación transparente con nuestros clientes durante todo el proceso.</p>
+                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+                             <div class="flex items-start space-x-3">
+                                 <div class="w-8 h-8 bg-accent-100 rounded-full flex items-center justify-center mt-1">
+                                     <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                     </svg>
+                                 </div>
+                                 <div>
+                                     <h3 class="font-heading font-semibold text-text-primary">Proyectos Especializados</h3>
+                                     <p class="text-sm text-text-secondary">Soluciones técnicas adaptadas a cada necesidad específica</p>
+                                 </div>
+                             </div>
+                             <div class="flex items-start space-x-3">
+                                 <div class="w-8 h-8 bg-accent-100 rounded-full flex items-center justify-center mt-1">
+                                     <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                     </svg>
+                                 </div>
+                                 <div>
+                                     <h3 class="font-heading font-semibold text-text-primary">Calidad Garantizada</h3>
+                                     <p class="text-sm text-text-secondary">Altos estándares de calidad en cada proyecto</p>
+                                 </div>
+                             </div>
+                             <div class="flex items-start space-x-3">
+                                 <div class="w-8 h-8 bg-accent-100 rounded-full flex items-center justify-center mt-1">
+                                     <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                     </svg>
+                                 </div>
+                                 <div>
+                                     <h3 class="font-heading font-semibold text-text-primary">Experiencia Comprobada</h3>
+                                     <p class="text-sm text-text-secondary">Años de experiencia en el sector</p>
+                                 </div>
+                             </div>
+                             <div class="flex items-start space-x-3">
+                                 <div class="w-8 h-8 bg-accent-100 rounded-full flex items-center justify-center mt-1">
+                                     <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                     </svg>
+                                 </div>
+                                 <div>
+                                     <h3 class="font-heading font-semibold text-text-primary">Servicio Integral</h3>
+                                     <p class="text-sm text-text-secondary">Desde planificación hasta entrega final</p>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
 
-                    <!-- Process Methodology -->
+                    <!-- Metodología del Proceso -->
                     <div class="card mb-8">
                         <div class="accordion-header flex items-center justify-between cursor-pointer md:cursor-default" data-target="process">
-                            <h2 class="text-fluid-2xl font-heading font-bold text-text-primary">Our Process</h2>
+                            <h2 class="text-fluid-2xl font-heading font-bold text-text-primary">Nuestro Proceso</h2>
                             <svg class="w-6 h-6 text-text-secondary transform transition-transform duration-200 md:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                             </svg>
@@ -195,39 +194,38 @@
                                 <div class="flex items-start space-x-4">
                                     <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold text-lg">1</div>
                                     <div>
-                                        <h3 class="text-fluid-lg font-heading font-semibold text-text-primary mb-2">Initial Consultation</h3>
-                                        <p class="text-text-secondary">We meet with you to understand your vision, requirements, and budget. Our team conducts a thorough site assessment and discusses design possibilities.</p>
+                                        <h3 class="text-fluid-lg font-heading font-semibold text-text-primary mb-2">Consulta Inicial</h3>
+                                        <p class="text-text-secondary">Nos reunimos con usted para entender su visión, requisitos y presupuesto. Nuestro equipo realiza una evaluación exhaustiva del sitio y discute las posibilidades de diseño.</p>
                                     </div>
                                 </div>
                                 <div class="flex items-start space-x-4">
                                     <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-white font-bold text-lg">2</div>
                                     <div>
-                                        <h3 class="text-fluid-lg font-heading font-semibold text-text-primary mb-2">Design & Planning</h3>
-                                        <p class="text-text-secondary">Our architects and designers create detailed plans and 3D renderings. We handle all permits and ensure compliance with local building codes.</p>
+                                        <h3 class="text-fluid-lg font-heading font-semibold text-text-primary mb-2">Diseño y Planificación</h3>
+                                        <p class="text-text-secondary">Nuestros arquitectos y diseñadores crean planos detallados y renderizados 3D. Gestionamos todos los permisos y aseguramos el cumplimiento con los códigos de construcción locales.</p>
                                     </div>
                                 </div>
                                 <div class="flex items-start space-x-4">
                                     <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center text-white font-bold text-lg">3</div>
                                     <div>
-                                        <h3 class="text-fluid-lg font-heading font-semibold text-text-primary mb-2">Construction Phase</h3>
-                                        <p class="text-text-secondary">Our skilled craftsmen begin construction with regular progress updates. We maintain clean, safe work sites and stick to agreed timelines.</p>
+                                        <h3 class="text-fluid-lg font-heading font-semibold text-text-primary mb-2">Fase de Construcción</h3>
+                                        <p class="text-text-secondary">Nuestros artesanos expertos comienzan la construcción con actualizaciones regulares de progreso. Mantenemos sitios de trabajo limpios y seguros y nos adherimos a los cronogramas acordados.</p>
                                     </div>
                                 </div>
                                 <div class="flex items-start space-x-4">
                                     <div class="w-12 h-12 bg-primary-700 rounded-full flex items-center justify-center text-white font-bold text-lg">4</div>
                                     <div>
-                                        <h3 class="text-fluid-lg font-heading font-semibold text-text-primary mb-2">Final Inspection & Handover</h3>
-                                        <p class="text-text-secondary">We conduct thorough quality checks and walk through the completed project with you. All warranties and maintenance information are provided.</p>
+                                        <h3 class="text-fluid-lg font-heading font-semibold text-text-primary mb-2">Inspección Final y Entrega</h3>
+                                        <p class="text-text-secondary">Realizamos verificaciones exhaustivas de calidad y recorremos el proyecto completado con usted. Se proporciona toda la información de garantías y mantenimiento.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Project Timeline -->
+                    <!-- Cronograma del Proyecto -->
                     <div class="card mb-8">
                         <div class="accordion-header flex items-center justify-between cursor-pointer md:cursor-default" data-target="timeline">
-                            <h2 class="text-fluid-2xl font-heading font-bold text-text-primary">Typical Timeline</h2>
+                            <h2 class="text-fluid-2xl font-heading font-bold text-text-primary">Cronograma Típico</h2>
                             <svg class="w-6 h-6 text-text-secondary transform transition-transform duration-200 md:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                             </svg>
@@ -236,45 +234,45 @@
                             <div id="timeline-content" class="space-y-6">
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div class="bg-primary-50 p-6 rounded-lg">
-                                        <h3 class="font-heading font-semibold text-text-primary mb-2">Planning Phase</h3>
-                                        <p class="text-text-secondary text-sm mb-2">2-4 weeks</p>
-                                        <p class="text-text-secondary">Design development, permits, and material selection</p>
+                                        <h3 class="font-heading font-semibold text-text-primary mb-2">Fase de Planificación</h3>
+                                        <p class="text-text-secondary text-sm mb-2">2-4 semanas</p>
+                                        <p class="text-text-secondary">Desarrollo del diseño, permisos y selección de materiales</p>
                                     </div>
                                     <div class="bg-secondary-50 p-6 rounded-lg">
-                                        <h3 class="font-heading font-semibold text-text-primary mb-2">Foundation & Framing</h3>
-                                        <p class="text-text-secondary text-sm mb-2">3-6 weeks</p>
-                                        <p class="text-text-secondary">Site preparation, foundation work, and structural framing</p>
+                                        <h3 class="font-heading font-semibold text-text-primary mb-2">Cimentación y Estructura</h3>
+                                        <p class="text-text-secondary text-sm mb-2">3-6 semanas</p>
+                                        <p class="text-text-secondary">Preparación del sitio, trabajo de cimentación y estructura</p>
                                     </div>
                                     <div class="bg-accent-50 p-6 rounded-lg">
-                                        <h3 class="font-heading font-semibold text-text-primary mb-2">Systems Installation</h3>
-                                        <p class="text-text-secondary text-sm mb-2">2-4 weeks</p>
-                                        <p class="text-text-secondary">Electrical, plumbing, and HVAC installation</p>
+                                        <h3 class="font-heading font-semibold text-text-primary mb-2">Instalación de Sistemas</h3>
+                                        <p class="text-text-secondary text-sm mb-2">2-4 semanas</p>
+                                        <p class="text-text-secondary">Instalación eléctrica, plomería y HVAC</p>
                                     </div>
                                     <div class="bg-primary-100 p-6 rounded-lg">
-                                        <h3 class="font-heading font-semibold text-text-primary mb-2">Finishing Work</h3>
-                                        <p class="text-text-secondary text-sm mb-2">4-8 weeks</p>
-                                        <p class="text-text-secondary">Drywall, flooring, fixtures, and final details</p>
+                                        <h3 class="font-heading font-semibold text-text-primary mb-2">Trabajo de Acabados</h3>
+                                        <p class="text-text-secondary text-sm mb-2">4-8 semanas</p>
+                                        <p class="text-text-secondary">Paneles de yeso, pisos, accesorios y detalles finales</p>
                                     </div>
                                 </div>
                                 <div class="bg-gray-50 p-6 rounded-lg">
-                                    <p class="text-text-secondary"><strong>Total Project Duration:</strong> <span id="total-duration">3-6 months for typical residential projects</span></p>
-                                    <p class="text-text-secondary text-sm mt-2">Timeline may vary based on project complexity, weather conditions, and permit approval times.</p>
+                                    <p class="text-text-secondary"><strong>Duración Total del Proyecto:</strong> <span id="total-duration">3-6 meses para proyectos residenciales típicos</span></p>
+                                    <p class="text-text-secondary text-sm mt-2">El cronograma puede variar según la complejidad del proyecto, condiciones climáticas y tiempos de aprobación de permisos.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Pricing Considerations -->
+                    <!-- Consideraciones de Precios -->
                     <div class="card mb-8">
                         <div class="accordion-header flex items-center justify-between cursor-pointer md:cursor-default" data-target="pricing">
-                            <h2 class="text-fluid-2xl font-heading font-bold text-text-primary">Pricing Considerations</h2>
+                            <h2 class="text-fluid-2xl font-heading font-bold text-text-primary">Consideraciones de Precios</h2>
                             <svg class="w-6 h-6 text-text-secondary transform transition-transform duration-200 md:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                             </svg>
                         </div>
                         <div id="pricing" class="accordion-content hidden md:block mt-6">
                             <div id="pricing-content" class="space-y-6">
-                                <p class="text-text-secondary">Our pricing is transparent and competitive, with detailed estimates provided for every project. Factors that influence pricing include:</p>
+                                <p class="text-text-secondary">Nuestros precios son transparentes y competitivos, con estimaciones detalladas proporcionadas para cada proyecto. Los factores que influyen en los precios incluyen:</p>
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div class="space-y-4">
                                         <div class="flex items-start space-x-3">
@@ -282,8 +280,8 @@
                                                 <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                                             </svg>
                                             <div>
-                                                <h4 class="font-semibold text-text-primary">Project Size & Complexity</h4>
-                                                <p class="text-sm text-text-secondary">Square footage and architectural complexity</p>
+                                                <h4 class="font-semibold text-text-primary">Tamaño y Complejidad del Proyecto</h4>
+                                                <p class="text-sm text-text-secondary">Metros cuadrados y complejidad arquitectónica</p>
                                             </div>
                                         </div>
                                         <div class="flex items-start space-x-3">
@@ -291,8 +289,8 @@
                                                 <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                                             </svg>
                                             <div>
-                                                <h4 class="font-semibold text-text-primary">Material Selection</h4>
-                                                <p class="text-sm text-text-secondary">Quality and type of materials chosen</p>
+                                                <h4 class="font-semibold text-text-primary">Selección de Materiales</h4>
+                                                <p class="text-sm text-text-secondary">Calidad y tipo de materiales elegidos</p>
                                             </div>
                                         </div>
                                         <div class="flex items-start space-x-3">
@@ -300,8 +298,8 @@
                                                 <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                                             </svg>
                                             <div>
-                                                <h4 class="font-semibold text-text-primary">Site Conditions</h4>
-                                                <p class="text-sm text-text-secondary">Accessibility and ground conditions</p>
+                                                <h4 class="font-semibold text-text-primary">Condiciones del Sitio</h4>
+                                                <p class="text-sm text-text-secondary">Accesibilidad y condiciones del terreno</p>
                                             </div>
                                         </div>
                                     </div>
@@ -311,8 +309,8 @@
                                                 <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                                             </svg>
                                             <div>
-                                                <h4 class="font-semibold text-text-primary">Custom Features</h4>
-                                                <p class="text-sm text-text-secondary">Specialized installations and finishes</p>
+                                                <h4 class="font-semibold text-text-primary">Características Personalizadas</h4>
+                                                <p class="text-sm text-text-secondary">Instalaciones especializadas y acabados</p>
                                             </div>
                                         </div>
                                         <div class="flex items-start space-x-3">
@@ -320,8 +318,8 @@
                                                 <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                                             </svg>
                                             <div>
-                                                <h4 class="font-semibold text-text-primary">Timeline Requirements</h4>
-                                                <p class="text-sm text-text-secondary">Rush projects may incur additional costs</p>
+                                                <h4 class="font-semibold text-text-primary">Requisitos de Cronograma</h4>
+                                                <p class="text-sm text-text-secondary">Proyectos urgentes pueden incurrir en costos adicionales</p>
                                             </div>
                                         </div>
                                         <div class="flex items-start space-x-3">
@@ -329,26 +327,26 @@
                                                 <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                                             </svg>
                                             <div>
-                                                <h4 class="font-semibold text-text-primary">Permits & Inspections</h4>
-                                                <p class="text-sm text-text-secondary">Local requirements and fees</p>
+                                                <h4 class="font-semibold text-text-primary">Permisos e Inspecciones</h4>
+                                                <p class="text-sm text-text-secondary">Requisitos y tarifas locales</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="bg-accent-50 p-6 rounded-lg">
-                                    <h4 class="font-heading font-semibold text-text-primary mb-2">Free Consultation & Estimate</h4>
-                                    <p class="text-text-secondary">We provide detailed, no-obligation estimates for all projects. Contact us today to discuss your specific needs and receive a customized quote.</p>
+                                    <h4 class="font-heading font-semibold text-text-primary mb-2">Comprometidos con la excelencia para nuestros clientes</h4>
+                                    <p class="text-text-secondary">Ofrecemos asesoría personalizada y estimaciones claras, detalladas y sin compromiso. Nuestro objetivo es brindarte soluciones a medida que se adapten a tus necesidades y presupuesto. Contáctanos hoy y descubrí cómo podemos hacer realidad tu proyecto con profesionalismo y transparencia.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Sidebar (4 columns on desktop) -->
+            <!-- Barra Lateral (4 columnas en escritorio) -->
                 <div class="lg:col-span-1">
-                    <!-- Service Highlights -->
+                    <!-- Aspectos Destacados del Servicio -->
                     <div class="card mb-8">
-                        <h3 class="text-fluid-xl font-heading font-semibold mb-6">Service Highlights</h3>
+                        <h3 class="text-fluid-xl font-heading font-semibold mb-6">Aspectos Destacados del Servicio</h3>
                         <div id="service-highlights" class="space-y-4">
                             <div class="flex items-center space-x-3">
                                 <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center">
@@ -356,7 +354,7 @@
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                     </svg>
                                 </div>
-                                <span class="text-text-primary font-semibold">15+ Years Experience</span>
+                                <span class="text-text-primary font-semibold">15+ Años de Experiencia</span>
                             </div>
                             <div class="flex items-center space-x-3">
                                 <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center">
@@ -364,7 +362,7 @@
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                     </svg>
                                 </div>
-                                <span class="text-text-primary font-semibold">Licensed & Insured</span>
+                                <span class="text-text-primary font-semibold">Ingenieros Calificados</span>
                             </div>
                             <div class="flex items-center space-x-3">
                                 <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center">
@@ -372,68 +370,34 @@
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                     </svg>
                                 </div>
-                                <span class="text-text-primary font-semibold">Quality Guarantee</span>
-                            </div>
-                            <div class="flex items-center space-x-3">
-                                <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center">
-                                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                    </svg>
-                                </div>
-                                <span class="text-text-primary font-semibold">Free Estimates</span>
+                                <span class="text-text-primary font-semibold">Garantía de Calidad</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Certifications -->
-                    <div class="card mb-8">
-                        <h3 class="text-fluid-xl font-heading font-semibold mb-6">Certifications</h3>
-                        <div class="space-y-4">
-                            <div class="flex items-center space-x-3">
-                                <img src="https://images.pixabay.com/photo/2017/06/10/07/18/list-2389219_1280.png" alt="Certification badge" class="w-12 h-12 object-contain" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
-                                <div>
-                                    <h4 class="font-semibold text-text-primary">Licensed Contractor</h4>
-                                    <p class="text-sm text-text-secondary">State License #123456</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center space-x-3">
-                                <img src="https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Insurance badge" class="w-12 h-12 object-contain" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
-                                <div>
-                                    <h4 class="font-semibold text-text-primary">Fully Insured</h4>
-                                    <p class="text-sm text-text-secondary">$2M Liability Coverage</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center space-x-3">
-                                <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&w=100&h=100&fit=crop" alt="Quality badge" class="w-12 h-12 object-contain" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
-                                <div>
-                                    <h4 class="font-semibold text-text-primary">Quality Certified</h4>
-                                    <p class="text-sm text-text-secondary">ISO 9001:2015</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                 
 
-                    <!-- Contact Form -->
+                    <!-- Formulario de Contacto -->
                     <div class="card mb-8">
-                        <h3 class="text-fluid-xl font-heading font-semibold mb-6">Get Service Quote</h3>
+                        <h3 class="text-fluid-xl font-heading font-semibold mb-6">Obtener Cotización de Servicio</h3>
                         <form id="service-contact-form" class="space-y-4">
                             <div>
-                                <label for="service-name" class="block text-sm font-semibold text-text-primary mb-2">Full Name</label>
+                                <label for="service-name" class="block text-sm font-semibold text-text-primary mb-2">Nombre Completo</label>
                                 <input type="text" id="service-name" name="name" class="form-input" required />
                             </div>
                             <div>
-                                <label for="service-email" class="block text-sm font-semibold text-text-primary mb-2">Email</label>
+                                <label for="service-email" class="block text-sm font-semibold text-text-primary mb-2">Correo Electrónico</label>
                                 <input type="email" id="service-email" name="email" class="form-input" required />
                             </div>
                             <div>
-                                <label for="service-phone" class="block text-sm font-semibold text-text-primary mb-2">Phone</label>
+                                <label for="service-phone" class="block text-sm font-semibold text-text-primary mb-2">Teléfono</label>
                                 <input type="tel" id="service-phone" name="phone" class="form-input" />
                             </div>
                             <div>
-                                <label for="service-message" class="block text-sm font-semibold text-text-primary mb-2">Project Details</label>
-                                <textarea id="service-message" name="message" rows="4" class="form-input" placeholder="Tell us about your project..." required></textarea>
+                                <label for="service-message" class="block text-sm font-semibold text-text-primary mb-2">Detalles del Proyecto</label>
+                                <textarea id="service-message" name="message" rows="4" class="form-input" placeholder="Cuéntanos sobre tu proyecto..." required></textarea>
                             </div>
-                            <button type="submit" class="btn-secondary w-full">Request Quote</button>
+                            <button type="submit" class="btn-secondary w-full">Solicitar Cotización</button>
                         </form>
                     </div>
                 </div>
@@ -441,38 +405,38 @@
         </div>
     </section>
 
-    <!-- Project Examples Gallery -->
+    <!-- Galería de Ejemplos de Proyectos -->
     <section class="py-20 bg-surface">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="text-fluid-3xl font-heading font-bold text-text-primary mb-4">Related Projects</h2>
+                <h2 class="text-fluid-3xl font-heading font-bold text-text-primary mb-4">Proyectos Relacionados</h2>
                 <p class="text-fluid-lg text-text-secondary max-w-2xl mx-auto">
-                    Explore our portfolio of completed projects in this service category.
+                    Explora nuestro portafolio de proyectos completados en esta categoría de servicio.
                 </p>
             </div>
 
-            <!-- Filter Options -->
+            <!-- Opciones de Filtro -->
             <div class="flex flex-wrap gap-4 justify-center mb-12">
                 <button class="project-filter active bg-primary text-white px-6 py-2 rounded-md font-semibold transition-all duration-200" data-filter="all">
-                    All Projects
+                    Todos los Proyectos
                 </button>
                 <button class="project-filter bg-gray-100 text-text-secondary px-6 py-2 rounded-md font-semibold hover:bg-gray-200 transition-all duration-200" data-filter="residential">
-                    Residential
+                    Residencial
                 </button>
                 <button class="project-filter bg-gray-100 text-text-secondary px-6 py-2 rounded-md font-semibold hover:bg-gray-200 transition-all duration-200" data-filter="commercial">
-                    Commercial
+                    Comercial
                 </button>
                 <button class="project-filter bg-gray-100 text-text-secondary px-6 py-2 rounded-md font-semibold hover:bg-gray-200 transition-all duration-200" data-filter="remodeling">
-                    Remodeling
+                    Remodelación
                 </button>
             </div>
 
-            <!-- Project Gallery Grid -->
+            <!-- Cuadrícula de Galería de Proyectos -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="project-gallery">
-                <!-- Project 1 -->
-                <div class="project-item group cursor-pointer" data-category="residential" onclick="openLightbox('https://images.pixabay.com/photo/2016/11/29/03/53/house-1867187_1280.jpg', 'Modern Family Home - Custom residential construction with sustainable materials and contemporary design.')">
+                <!-- Proyecto 1 -->
+                <div class="project-item group cursor-pointer" data-category="residential" onclick="openLightbox('https://images.pixabay.com/photo/2016/11/29/03/53/house-1867187_1280.jpg', 'Casa Familiar Moderna - Construcción residencial personalizada con materiales sostenibles y diseño contemporáneo.')">
                     <div class="relative overflow-hidden rounded-lg shadow-medium group-hover:shadow-large transition-all duration-300">
-                        <img src="https://images.pixabay.com/photo/2016/11/29/03/53/house-1867187_1280.jpg" alt="Modern Family Home" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <img src="https://images.pixabay.com/photo/2016/11/29/03/53/house-1867187_1280.jpg" alt="Casa Familiar Moderna" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
                         <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
                         <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -481,15 +445,15 @@
                         </div>
                     </div>
                     <div class="mt-4">
-                        <h3 class="text-fluid-lg font-heading font-semibold mb-2">Modern Family Home</h3>
-                        <p class="text-text-secondary">Custom residential construction with sustainable materials</p>
+                        <h3 class="text-fluid-lg font-heading font-semibold mb-2">Casa Familiar Moderna</h3>
+                        <p class="text-text-secondary">Construcción residencial personalizada con materiales sostenibles</p>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
-                <div class="project-item group cursor-pointer" data-category="commercial" onclick="openLightbox('https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800', 'Commercial Office Building - Multi-story commercial complex with modern amenities and energy-efficient systems.')">
+                <!-- Proyecto 2 -->
+                <div class="project-item group cursor-pointer" data-category="commercial" onclick="openLightbox('https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800', 'Edificio de Oficinas Comercial - Complejo comercial de múltiples pisos con amenidades modernas y sistemas energéticamente eficientes.')">
                     <div class="relative overflow-hidden rounded-lg shadow-medium group-hover:shadow-large transition-all duration-300">
-                        <img src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Commercial Office Building" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <img src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Edificio de Oficinas Comercial" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
                         <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
                         <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -498,15 +462,15 @@
                         </div>
                     </div>
                     <div class="mt-4">
-                        <h3 class="text-fluid-lg font-heading font-semibold mb-2">Commercial Office Building</h3>
-                        <p class="text-text-secondary">Multi-story commercial complex with modern amenities</p>
+                        <h3 class="text-fluid-lg font-heading font-semibold mb-2">Edificio de Oficinas Comercial</h3>
+                        <p class="text-text-secondary">Complejo comercial de múltiples pisos con amenidades modernas</p>
                     </div>
                 </div>
 
-                <!-- Project 3 -->
-                <div class="project-item group cursor-pointer" data-category="remodeling" onclick="openLightbox('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&w=800', 'Kitchen Renovation - Complete kitchen remodel with custom cabinetry, granite countertops, and modern appliances.')">
+                <!-- Proyecto 3 -->
+                <div class="project-item group cursor-pointer" data-category="remodeling" onclick="openLightbox('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&w=800', 'Renovación de Cocina - Remodelación completa de cocina con gabinetes personalizados, encimeras de granito y electrodomésticos modernos.')">
                     <div class="relative overflow-hidden rounded-lg shadow-medium group-hover:shadow-large transition-all duration-300">
-                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&w=800" alt="Kitchen Renovation" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&w=800" alt="Renovación de Cocina" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
                         <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
                         <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -515,15 +479,15 @@
                         </div>
                     </div>
                     <div class="mt-4">
-                        <h3 class="text-fluid-lg font-heading font-semibold mb-2">Kitchen Renovation</h3>
-                        <p class="text-text-secondary">Complete kitchen remodel with custom cabinetry</p>
+                        <h3 class="text-fluid-lg font-heading font-semibold mb-2">Renovación de Cocina</h3>
+                        <p class="text-text-secondary">Remodelación completa de cocina con gabinetes personalizados</p>
                     </div>
                 </div>
 
-                <!-- Project 4 -->
-                <div class="project-item group cursor-pointer" data-category="residential" onclick="openLightbox('https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=800', 'Luxury Home Addition - Two-story home addition with master suite and expanded living areas.')">
+                <!-- Proyecto 4 -->
+                <div class="project-item group cursor-pointer" data-category="residential" onclick="openLightbox('https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=800', 'Ampliación de Casa de Lujo - Ampliación de casa de dos pisos con suite principal y áreas de estar expandidas.')">
                     <div class="relative overflow-hidden rounded-lg shadow-medium group-hover:shadow-large transition-all duration-300">
-                        <img src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Luxury Home Addition" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <img src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Ampliación de Casa de Lujo" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
                         <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
                         <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -532,15 +496,15 @@
                         </div>
                     </div>
                     <div class="mt-4">
-                        <h3 class="text-fluid-lg font-heading font-semibold mb-2">Luxury Home Addition</h3>
-                        <p class="text-text-secondary">Two-story addition with master suite and living areas</p>
+                        <h3 class="text-fluid-lg font-heading font-semibold mb-2">Ampliación de Casa de Lujo</h3>
+                        <p class="text-text-secondary">Ampliación de dos pisos con suite principal y áreas de estar</p>
                     </div>
                 </div>
 
-                <!-- Project 5 -->
-                <div class="project-item group cursor-pointer" data-category="commercial" onclick="openLightbox('https://images.pixabay.com/photo/2017/07/09/03/19/home-2486092_1280.jpg', 'Retail Shopping Center - Modern retail complex with multiple storefronts and parking facilities.')">
+                <!-- Proyecto 5 -->
+                <div class="project-item group cursor-pointer" data-category="commercial" onclick="openLightbox('https://images.pixabay.com/photo/2017/07/09/03/19/home-2486092_1280.jpg', 'Centro Comercial Minorista - Complejo minorista moderno con múltiples frentes de tienda e instalaciones de estacionamiento.')">
                     <div class="relative overflow-hidden rounded-lg shadow-medium group-hover:shadow-large transition-all duration-300">
-                        <img src="https://images.pixabay.com/photo/2017/07/09/03/19/home-2486092_1280.jpg" alt="Retail Shopping Center" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <img src="https://images.pixabay.com/photo/2017/07/09/03/19/home-2486092_1280.jpg" alt="Centro Comercial Minorista" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
                         <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
                         <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -549,15 +513,15 @@
                         </div>
                     </div>
                     <div class="mt-4">
-                        <h3 class="text-fluid-lg font-heading font-semibold mb-2">Retail Shopping Center</h3>
-                        <p class="text-text-secondary">Modern retail complex with multiple storefronts</p>
+                        <h3 class="text-fluid-lg font-heading font-semibold mb-2">Centro Comercial Minorista</h3>
+                        <p class="text-text-secondary">Complejo minorista moderno con múltiples frentes de tienda</p>
                     </div>
                 </div>
 
-                <!-- Project 6 -->
-                <div class="project-item group cursor-pointer" data-category="remodeling" onclick="openLightbox('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&w=800', 'Bathroom Renovation - Luxury bathroom remodel with marble finishes and modern fixtures.')">
+                <!-- Proyecto 6 -->
+                <div class="project-item group cursor-pointer" data-category="remodeling" onclick="openLightbox('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&w=800', 'Renovación de Baño - Remodelación de baño de lujo con acabados de mármol y accesorios modernos.')">
                     <div class="relative overflow-hidden rounded-lg shadow-medium group-hover:shadow-large transition-all duration-300">
-                        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&w=800" alt="Bathroom Renovation" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&w=800" alt="Renovación de Baño" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
                         <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
                         <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -566,120 +530,20 @@
                         </div>
                     </div>
                     <div class="mt-4">
-                        <h3 class="text-fluid-lg font-heading font-semibold mb-2">Bathroom Renovation</h3>
-                        <p class="text-text-secondary">Luxury bathroom remodel with marble finishes</p>
+                        <h3 class="text-fluid-lg font-heading font-semibold mb-2">Renovación de Baño</h3>
+                        <p class="text-text-secondary">Remodelación de baño de lujo con acabados de mármol</p>
                     </div>
                 </div>
             </div>
 
             <div class="text-center mt-12">
-                <a href="project_gallery.html" class="btn-primary">View All Projects</a>
+                <a href="project_gallery.html" class="btn-primary">Ver Todos los Proyectos</a>
             </div>
         </div>
     </section>
 
     <!-- Client Testimonials -->
-    <section class="py-20 bg-background">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-fluid-3xl font-heading font-bold text-text-primary mb-4">What Our Clients Say</h2>
-                <p class="text-fluid-lg text-text-secondary max-w-2xl mx-auto">
-                    Read testimonials from satisfied clients who have experienced our quality service.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="testimonials-container">
-                <!-- Testimonial 1 -->
-                <div class="testimonial-card card">
-                    <div class="flex items-center mb-4">
-                        <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Sarah Johnson" class="w-12 h-12 rounded-full object-cover mr-4" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
-                        <div>
-                            <h4 class="font-heading font-semibold text-text-primary">Sarah Johnson</h4>
-                            <p class="text-sm text-text-secondary">Homeowner</p>
-                        </div>
-                    </div>
-                    <div class="flex mb-4">
-                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                        </svg>
-                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                        </svg>
-                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                        </svg>
-                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                        </svg>
-                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                        </svg>
-                    </div>
-                    <p class="text-text-secondary italic mb-4">"Construction Pro built our dream home exactly as we envisioned. Their attention to detail and quality craftsmanship exceeded our expectations. The team was professional, punctual, and kept us informed throughout the entire process."</p>
-                    <p class="text-sm text-text-secondary">Custom Home Build - 2024</p>
-                </div>
-
-                <!-- Testimonial 2 -->
-                <div class="testimonial-card card">
-                    <div class="flex items-center mb-4">
-                        <img src="https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg" alt="Michael Chen" class="w-12 h-12 rounded-full object-cover mr-4" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
-                        <div>
-                            <h4 class="font-heading font-semibold text-text-primary">Michael Chen</h4>
-                            <p class="text-sm text-text-secondary">Business Owner</p>
-                        </div>
-                    </div>
-                    <div class="flex mb-4">
-                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                        </svg>
-                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                        </svg>
-                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                        </svg>
-                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                        </svg>
-                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                        </svg>
-                    </div>
-                    <p class="text-text-secondary italic mb-4">"We needed our office building completed on a tight deadline, and Construction Pro delivered. Their project management was excellent, and the quality of work was outstanding. Highly recommend for commercial projects."</p>
-                    <p class="text-sm text-text-secondary">Office Building Construction - 2023</p>
-                </div>
-
-                <!-- Testimonial 3 -->
-                <div class="testimonial-card card">
-                    <div class="flex items-center mb-4">
-                        <img src="https://images.unsplash.com/photo-1494790108755-2616c9c0e8c5?ixlib=rb-4.0.3&w=100&h=100&fit=crop" alt="Emily Rodriguez" class="w-12 h-12 rounded-full object-cover mr-4" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
-                        <div>
-                            <h4 class="font-heading font-semibold text-text-primary">Emily Rodriguez</h4>
-                            <p class="text-sm text-text-secondary">Homeowner</p>
-                        </div>
-                    </div>
-                    <div class="flex mb-4">
-                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                        </svg>
-                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                        </svg>
-                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                        </svg>
-                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                        </svg>
-                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                        </svg>
-                    </div>
-                    <p class="text-text-secondary italic mb-4">"Our kitchen renovation was completed beautifully and on time. The team was respectful of our home and cleaned up thoroughly each day. The final result exceeded our expectations and added significant value to our home."</p>
-                    <p class="text-sm text-text-secondary">Kitchen Remodeling - 2024</p>
-                </div>
-            </div>
-        </div>
+    
     </section>
 
     <!-- Sticky Contact Button -->
@@ -692,18 +556,16 @@
         </a>
     </div>
 
-    <!-- Footer -->
+ <!-- Footer -->
     <footer class="bg-text-primary text-white py-12">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
                     <div class="flex items-center space-x-2 mb-4">
-                        <svg class="w-8 h-8 text-secondary" viewBox="0 0 40 40" fill="currentColor">
-                            <path d="M20 2L4 8v12c0 10.55 7.84 19.24 18 21 10.16-1.76 18-10.45 18-21V8L20 2zm-2 18h-6v-2h6v-6h2v6h6v2h-6v6h-2v-6z"/>
-                        </svg>
-                        <span class="text-xl font-heading font-bold">Construction Pro</span>
+                        <img src="../Images/Logo.png" alt="Logo Corporación CAMIL" class="h-8 w-auto" />
+                        <span class="text-xl font-heading font-bold">Corporación CAMIL</span>
                     </div>
-                    <p class="text-gray-300 mb-4">Building dreams into reality with quality craftsmanship and professional service.</p>
+                    <p class="text-gray-300 mb-4">Construyendo sueños en realidad con calidad profesional y servicio excepcional.</p>
                     <div class="flex space-x-4">
                         <a href="#" class="text-gray-300 hover:text-secondary transition-colors duration-200">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -724,38 +586,38 @@
                 </div>
                 
                 <div>
-                    <h3 class="text-lg font-heading font-semibold mb-4">Services</h3>
+                    <h3 class="text-lg font-heading font-semibold mb-4">Servicios</h3>
                     <ul class="space-y-2">
-                        <li><a href="services_detail.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Residential Construction</a></li>
-                        <li><a href="services_detail.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Commercial Construction</a></li>
-                        <li><a href="services_detail.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Remodeling</a></li>
-                        <li><a href="services_detail.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Construction Supervision</a></li>
+                        <li><a href="services_detail.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Construcción General</a></li>
+                        <li><a href="services_detail.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Infraestructura Vial</a></li>
+                        <li><a href="services_detail.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Infraestructura Hidráulica</a></li>
+                        <li><a href="services_detail.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Servicios Especializados</a></li>
                     </ul>
                 </div>
                 
                 <div>
-                    <h3 class="text-lg font-heading font-semibold mb-4">Company</h3>
+                    <h3 class="text-lg font-heading font-semibold mb-4">Empresa</h3>
                     <ul class="space-y-2">
-                        <li><a href="about_us.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">About Us</a></li>
-                        <li><a href="project_gallery.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Projects</a></li>
-                        <li><a href="contact.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Contact</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-secondary transition-colors duration-200">Careers</a></li>
+                        <li><a href="about_us.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Nosotros</a></li>
+                        <li><a href="project_gallery.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Proyectos</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Contacto</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-secondary transition-colors duration-200">Carreras</a></li>
                     </ul>
                 </div>
                 
                 <div>
-                    <h3 class="text-lg font-heading font-semibold mb-4">Contact Info</h3>
+                    <h3 class="text-lg font-heading font-semibold mb-4">Información de Contacto</h3>
                     <div class="space-y-2 text-gray-300">
-                        <p>123 Construction Ave</p>
-                        <p>Building City, BC 12345</p>
-                        <p>(555) 123-4567</p>
-                        <p>info@constructionpro.com</p>
+                        <p>San Salvador</p>
+                        <p>El Salvador</p>
+                        <p>(503) 2XXX-XXXX</p>
+                        <p>info@corporacioncamil.com</p>
                     </div>
                 </div>
             </div>
             
             <div class="border-t border-gray-700 mt-8 pt-8 text-center">
-                <p class="text-gray-300">© 2025 Construction Pro. All Rights Reserved.</p>
+                <p class="text-gray-300">© 2025 Corporación CAMIL. Todos los Derechos Reservados.</p>
             </div>
         </div>
     </footer>
@@ -770,305 +632,5 @@
             <div id="lightbox-caption" class="absolute bottom-4 left-4 right-4 text-white text-center bg-black bg-opacity-50 p-2 rounded"></div>
         </div>
     </div>
-
-    <script>
-        // Service data
-        const serviceData = {
-            residential: {
-                title: 'Residential Construction Services',
-                description: 'Custom homes and residential projects built with precision, quality craftsmanship, and attention to every detail. From foundation to finish, we bring your dream home to life.',
-                heroImage: 'https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
-                overview: `
-                    <p>Our residential construction services encompass everything from custom home building to major renovations. We work closely with homeowners, architects, and designers to create living spaces that reflect your unique vision and lifestyle needs.</p>
-                    <p>With over 15 years of experience in residential construction, we have developed streamlined processes that ensure quality results while maintaining clear communication throughout your project.</p>
-                `,
-                highlights: [
-                    'Custom Home Building',
-                    'Home Additions', 
-                    'Foundation Work',
-                    'Structural Repairs'
-                ],
-                timeline: '3-6 months for typical residential projects',
-                testimonials: 'residential'
-            },
-            commercial: {
-                title: 'Commercial Construction Services',
-                description: 'Professional commercial buildings and office spaces designed for business success. We deliver projects on time and within budget while maintaining the highest quality standards.',
-                heroImage: 'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
-                overview: `
-                    <p>Our commercial construction services cover a wide range of business and industrial projects. From office buildings to retail spaces, we understand the unique requirements of commercial construction and the importance of minimizing business disruption.</p>
-                    <p>We work with architects, engineers, and business owners to create functional, efficient spaces that support your business goals while adhering to all commercial building codes and regulations.</p>
-                `,
-                highlights: [
-                    'Office Buildings',
-                    'Retail Spaces',
-                    'Warehouses',
-                    'Industrial Facilities'
-                ],
-                timeline: '6-18 months for typical commercial projects',
-                testimonials: 'commercial'
-            },
-            remodeling: {
-                title: 'Remodeling & Renovation Services',
-                description: 'Transform your existing space with our expert renovation and remodeling services. We breathe new life into homes and commercial spaces with creative solutions and quality craftsmanship.',
-                heroImage: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&w=1920&h=1080&fit=crop',
-                overview: `
-                    <p>Our remodeling services transform existing spaces into beautiful, functional areas that meet your current needs. Whether it's a kitchen renovation, bathroom remodel, or whole-house makeover, we handle every aspect of the project.</p>
-                    <p>We specialize in maximizing existing space, updating outdated systems, and creating modern, efficient layouts while preserving the character and charm of your property.</p>
-                `,
-                highlights: [
-                    'Kitchen Renovations',
-                    'Bathroom Remodeling',
-                    'Whole House Renovations',
-                    'Space Optimization'
-                ],
-                timeline: '2-4 months for typical remodeling projects',
-                testimonials: 'remodeling'
-            },
-            supervision: {
-                title: 'Construction Supervision Services',
-                description: 'Professional project management and supervision to ensure quality and timely completion. Our experienced supervisors oversee every aspect of your construction project.',
-                heroImage: 'https://images.pixabay.com/photo/2015/07/02/20/57/construction-worker-569149_1280.jpg',
-                overview: `
-                    <p>Our construction supervision services provide professional oversight for your building project. Our experienced supervisors ensure that work is completed according to specifications, on schedule, and within budget.</p>
-                    <p>We coordinate with contractors, suppliers, and inspectors to maintain project momentum while ensuring quality standards are met at every stage of construction.</p>
-                `,
-                highlights: [
-                    'Project Management',
-                    'Quality Control',
-                    'Schedule Coordination',
-                    'Budget Oversight'
-                ],
-                timeline: 'Duration varies based on project scope',
-                testimonials: 'supervision'
-            }
-        };
-
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Service tab switching
-        const serviceTabs = document.querySelectorAll('.service-tab');
-        const serviceBreadcrumb = document.getElementById('service-breadcrumb');
-        const heroTitle = document.getElementById('hero-title');
-        const heroDescription = document.getElementById('hero-description');
-        const heroImage = document.getElementById('hero-image');
-        const serviceOverview = document.getElementById('service-overview');
-        const totalDuration = document.getElementById('total-duration');
-
-        serviceTabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                const service = tab.dataset.service;
-                const data = serviceData[service];
-
-                // Update active tab
-                serviceTabs.forEach(t => {
-                    t.classList.remove('active', 'bg-primary', 'text-white');
-                    t.classList.add('bg-gray-100', 'text-text-secondary');
-                });
-                tab.classList.add('active', 'bg-primary', 'text-white');
-                tab.classList.remove('bg-gray-100', 'text-text-secondary');
-
-                // Update content
-                serviceBreadcrumb.textContent = data.title.replace(' Services', '');
-                heroTitle.textContent = data.title;
-                heroDescription.textContent = data.description;
-                heroImage.src = data.heroImage;
-                serviceOverview.innerHTML = data.overview;
-                totalDuration.textContent = data.timeline;
-
-                // Update service highlights
-                const highlightsList = document.getElementById('service-highlights');
-                const highlights = data.highlights.map(highlight => `
-                    <div class="flex items-center space-x-3">
-                        <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center">
-                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                            </svg>
-                        </div>
-                        <span class="text-text-primary font-semibold">${highlight}</span>
-                    </div>
-                `).join('');
-                
-                highlightsList.innerHTML = highlights + `
-                    <div class="flex items-center space-x-3">
-                        <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center">
-                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                            </svg>
-                        </div>
-                        <span class="text-text-primary font-semibold">15+ Years Experience</span>
-                    </div>
-                    <div class="flex items-center space-x-3">
-                        <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center">
-                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                            </svg>
-                        </div>
-                        <span class="text-text-primary font-semibold">Licensed & Insured</span>
-                    </div>
-                    <div class="flex items-center space-x-3">
-                        <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center">
-                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                            </svg>
-                        </div>
-                        <span class="text-text-primary font-semibold">Quality Guarantee</span>
-                    </div>
-                    <div class="flex items-center space-x-3">
-                        <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center">
-                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                            </svg>
-                        </div>
-                        <span class="text-text-primary font-semibold">Free Estimates</span>
-                    </div>
-                `;
-            });
-        });
-
-        // Accordion functionality for mobile
-        const accordionHeaders = document.querySelectorAll('.accordion-header');
-        
-        accordionHeaders.forEach(header => {
-            header.addEventListener('click', () => {
-                if (window.innerWidth < 768) { // Only on mobile
-                    const target = header.dataset.target;
-                    const content = document.getElementById(target);
-                    const arrow = header.querySelector('svg');
-                    
-                    content.classList.toggle('hidden');
-                    arrow.classList.toggle('rotate-180');
-                }
-            });
-        });
-
-        // Project filtering
-        const projectFilters = document.querySelectorAll('.project-filter');
-        const projectItems = document.querySelectorAll('.project-item');
-
-        projectFilters.forEach(filter => {
-            filter.addEventListener('click', () => {
-                const filterValue = filter.dataset.filter;
-
-                // Update active filter
-                projectFilters.forEach(f => {
-                    f.classList.remove('active', 'bg-primary', 'text-white');
-                    f.classList.add('bg-gray-100', 'text-text-secondary');
-                });
-                filter.classList.add('active', 'bg-primary', 'text-white');
-                filter.classList.remove('bg-gray-100', 'text-text-secondary');
-
-                // Filter projects
-                projectItems.forEach(item => {
-                    if (filterValue === 'all' || item.dataset.category === filterValue) {
-                        item.style.display = 'block';
-                    } else {
-                        item.style.display = 'none';
-                    }
-                });
-            });
-        });
-
-        // Lightbox functionality
-        function openLightbox(imageSrc, caption) {
-            const lightbox = document.getElementById('lightbox');
-            const lightboxImage = document.getElementById('lightbox-image');
-            const lightboxCaption = document.getElementById('lightbox-caption');
-            
-            lightboxImage.src = imageSrc;
-            lightboxImage.alt = caption;
-            lightboxCaption.textContent = caption;
-            lightbox.classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeLightbox() {
-            const lightbox = document.getElementById('lightbox');
-            lightbox.classList.add('hidden');
-            document.body.style.overflow = 'auto';
-        }
-
-        document.getElementById('close-lightbox').addEventListener('click', closeLightbox);
-        document.getElementById('lightbox').addEventListener('click', (e) => {
-            if (e.target === e.currentTarget) {
-                closeLightbox();
-            }
-        });
-
-        // Service contact form
-        const serviceContactForm = document.getElementById('service-contact-form');
-        
-        serviceContactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            const submitBtn = serviceContactForm.querySelector('button[type="submit"]');
-            const originalText = submitBtn.textContent;
-            submitBtn.textContent = 'Sending...';
-            submitBtn.disabled = true;
-
-            setTimeout(() => {
-                alert('Thank you for your inquiry! We will contact you soon with a detailed quote.');
-                serviceContactForm.reset();
-                submitBtn.textContent = originalText;
-                submitBtn.disabled = false;
-            }, 2000);
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Add scroll effect to header
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.classList.add('shadow-medium');
-            } else {
-                header.classList.remove('shadow-medium');
-            }
-        });
-
-        // Initialize with default service (residential)
-        document.addEventListener('DOMContentLoaded', () => {
-            // Show accordion content on desktop by default
-            if (window.innerWidth >= 768) {
-                document.querySelectorAll('.accordion-content').forEach(content => {
-                    content.classList.remove('hidden');
-                });
-            }
-        });
-
-        // Handle window resize
-        window.addEventListener('resize', () => {
-            if (window.innerWidth >= 768) {
-                document.querySelectorAll('.accordion-content').forEach(content => {
-                    content.classList.remove('hidden');
-                });
-                document.querySelectorAll('.accordion-header svg').forEach(arrow => {
-                    arrow.classList.remove('rotate-180');
-                });
-            } else {
-                document.querySelectorAll('.accordion-content').forEach(content => {
-                    content.classList.add('hidden');
-                });
-            }
-        });
-    </script>
 </body>
 </html>
