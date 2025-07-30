@@ -70,30 +70,203 @@
         const lightboxDescription = document.getElementById('lightbox-description');
         const lightboxThumbs = document.querySelectorAll('.lightbox-thumb');
 
-        // Project data for lightbox
-        const projectData = {
-            'Modern Family Home': {
-                images: [
-                    'https://images.pixabay.com/photo/2016/11/29/03/53/house-1867187_1280.jpg',
-                    'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800',
-                    'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&w=800'
-                ],
-                date: 'March 2024',
-                value: '$450,000',
-                category: 'Residential',
-                description: 'Contemporary residential construction with sustainable materials and energy-efficient design features. This project showcases modern architecture with smart home integration.'
-            },
-            'Office Complex Downtown': {
-                images: [
-                    'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800',
-                    'https://images.pixabay.com/photo/2016/11/29/03/53/house-1867187_1280.jpg',
-                    'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&w=800'
-                ],
-                date: 'January 2024',
-                value: '$2.1M',
-                category: 'Commercial',
-                description: 'Multi-story commercial complex with modern amenities and smart building technology. Features include advanced HVAC systems and sustainable construction practices.'
-            }
+// Project data for lightbox
+const projectData = {
+  'Modern Family Home': {
+    images: [
+      'https://images.pixabay.com/photo/2016/11/29/03/53/house-1867187_1280.jpg',
+      'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&w=800'
+    ],
+    date: 'March 2024',
+    value: '$450,000',
+    category: 'Residential',
+    description: 'Contemporary residential construction with sustainable materials and energy-efficient design features. This project showcases modern architecture with smart home integration.'
+  },
+  'Office Complex Downtown': {
+    images: [
+      'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'https://images.pixabay.com/photo/2016/11/29/03/53/house-1867187_1280.jpg',
+      'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&w=800'
+    ],
+    date: 'January 2024',
+    value: '$2.1M',
+    category: 'Commercial',
+    description: 'Multi-story commercial complex with modern amenities and smart building technology. Features include advanced HVAC systems and sustainable construction practices.'
+  },
+  'Urbanización Los Robles': {
+    images: [
+      '../Images/Construccion/Vivienda/Casa-t1.jpg',
+      '../Images/Construccion/Vivienda/Casa-t2.jpg',
+      '../Images/Construccion/Vivienda/Casa-t3.jpg'
+    ],
+    date: 'Enero 2024',
+    value: '$1.5M',
+    category: 'Residencial',
+    description: 'Proyecto habitacional de 24 viviendas unifamiliares con diseño eficiente, acceso pavimentado y áreas verdes comunes.'
+  },
+  'Mejoras en Parque Recreativo': {
+    images: [
+      '../Images/Construccion/Parque/p1.jpg',
+      '../Images/Construccion/Parque/p2.jpg',
+      '../Images/Construccion/Parque/p3.jpg'
+    ],
+    date: 'Noviembre 2023',
+    value: '$180,000',
+    category: 'Remodelación',
+    description: 'Reacondicionamiento de zonas verdes, juegos infantiles, mobiliario urbano y senderos iluminados en comunidad rural.'
+  },
+  'Restaurante El Sazón Urbano': {
+    images: [
+      '../Images/Estetica/Pictures/ESTE1.jpg',
+      '../Images/Estetica/Equipo de trabajo/Eq1.jpg',
+      '../Images/Construccion/Vivienda/Casa-p1.jpg'
+    ],
+    date: 'Junio 2023',
+    value: '$95,000',
+    category: 'Comida',
+    description: 'Diseño e implementación de restaurante moderno con iluminación cálida, cocina industrial y fachada de impacto.'
+  },
+  'Supervisión Centro Escolar STC': {
+    images: [
+      '../Images/Construccion/Escuela/STC1.jpg',
+      '../Images/Construccion/Escuela/STC2.jpg',
+      '../Images/Construccion/Escuela/STC3.jpg'
+    ],
+    date: 'Abril 2022',
+    value: '$210,000',
+    category: 'Supervisión',
+    description: 'Supervisión técnica y control de calidad para la ampliación de aulas, techos y accesos del Centro Escolar STC.'
+  },
+  'Pozo Artesanal Comunidad Los Pinos': {
+    images: [
+      '../Images/Hidraulico/Pozo/pozo-1.JPG',
+      '../Images/Hidraulico/Pozo/Pozo2.JPG',
+      '../Images/Hidraulico/Pozo/Pozo-3.JPG'
+    ],
+    date: 'Marzo 2023',
+    value: '$58,000',
+    category: 'Remodelación',
+    description: 'Excavación y habilitación de pozo artesanal con cercado, sistema de bombeo manual y caseta técnica para comunidad rural.'
+  },
+  'Instalación Paneles de Control': {
+    images: [
+      '../Images/Electrico/panel de control/PN1.JPG',
+      '../Images/Electrico/panel de control/PN2.JPG',
+      '../Images/Electrico/panel de control/PN3.JPG'
+    ],
+    date: 'Agosto 2023',
+    value: '$130,000',
+    category: 'Supervisión',
+    description: 'Instalación y configuración de paneles eléctricos de control automatizado en planta de distribución.'
+  },
+  'Rehabilitación Calle San Sebastián': {
+    images: [
+      '../Images/Logo.png',
+      '../Images/Construccion/Calles/Calle San Sebastian.jpg',
+      '../Images/Construccion/Calles/Calle2-San Sabastian.jpg'
+    ],
+    date: 'Febrero 2024',
+    value: '$320,000',
+    category: 'Remodelación',
+    description: 'Recarpeteo de vía principal, señalización horizontal y accesibilidad universal.'
+  },
+
+  'Ampliación Centro Escolar El Rosario': {
+    images: [
+      '../Images/Construccion/Calles/Calle3-San Sebastian.jpg',
+      '../Images/Construccion/Escuela/STC1.jpg',
+      '../Images/Construccion/Escuela/STC2.jpg'
+    ],
+    date: 'Enero 2024',
+    value: '$275,000',
+    category: 'Supervisión',
+    description: 'Ampliación de infraestructura educativa: aulas, sanitarios y techado.'
+  },
+
+  'Renovación Parque Infantil Sur': {
+    images: [
+      '../Images/Construccion/Escuela/STC3.jpg',
+      '../Images/Construccion/Escuela/STC4.jpg',
+      '../Images/Construccion/Parque/p1.jpg'
+    ],
+    date: 'Diciembre 2023',
+    value: '$98,000',
+    category: 'Remodelación',
+    description: 'Remodelación completa de parque infantil con seguridad perimetral.'
+  },
+
+  'Instalación Juegos Nuevos': {
+    images: [
+      '../Images/Construccion/Parque/p2.jpg',
+      '../Images/Construccion/Parque/p3.jpg',
+      '../Images/Construccion/Parque/Jutiapa/PJ1.JPG'
+    ],
+    date: 'Noviembre 2023',
+    value: '$110,000',
+    category: 'Comida',
+    description: 'Implementación de juegos recreativos modernos y sistema de vigilancia.'
+  },
+
+  'Viviendas Modelo Compacto': {
+    images: [
+      '../Images/Construccion/Parque/Jutiapa/PJ2.JPG',
+      '../Images/Construccion/Parque/Jutiapa/PJ3.JPG',
+      '../Images/Construccion/Vivienda/Casa-t1.jpg'
+    ],
+    date: 'Octubre 2023',
+    value: '$490,000',
+    category: 'Residencial',
+    description: 'Construcción de vivienda eficiente con materiales térmicos y diseño compacto.'
+  },
+
+  'Supervisión Planta Potabilizadora': {
+    images: [
+      '../Images/Construccion/Vivienda/Casa-t2.jpg',
+      '../Images/Construccion/Vivienda/Casa-t3.jpg',
+      '../Images/Hidraulico/Pozo/pozo-1.JPG'
+    ],
+    date: 'Septiembre 2023',
+    value: '$240,000',
+    category: 'Supervisión',
+    description: 'Supervisión técnica y control de calidad para planta de agua potable.'
+  },
+
+  'Construcción Losa Comunal': {
+    images: [
+      '../Images/Hidraulico/Pozo/Pozo2.JPG',
+      '../Images/Hidraulico/Pozo/Pozo-3.JPG',
+      '../Images/Electrico/panel de control/PN1.JPG'
+    ],
+    date: 'Agosto 2023',
+    value: '$180,000',
+    category: 'Remodelación',
+    description: 'Ejecución de losa de concreto armado con drenaje y graderíos.'
+  },
+
+  'Instalación Cableado Subterráneo': {
+    images: [
+      '../Images/Electrico/panel de control/PN2.JPG',
+      '../Images/Electrico/panel de control/PN3.JPG',
+      '../Images/Estetica/Equipo de trabajo/Eq1.jpg'
+    ],
+    date: 'Julio 2023',
+    value: '$130,000',
+    category: 'Supervisión',
+    description: 'Tendido eléctrico subterráneo y cajas de inspección en zona residencial.'
+  },
+
+  'Urbanización Jardines del Valle': {
+    images: [
+      '../Images/Estetica/Pictures/ESTE1.jpg',
+      '../Images/Construccion/Vivienda/Casa-p1.jpg',
+      '../Images/Construccion/Escuela/STC1.jpg'
+    ],
+    date: 'Junio 2023',
+    value: '$680,000',
+    category: 'Residencial',
+    description: 'Urbanización con diseño vial, servicios básicos y lotificación de viviendas.'
+  }
         };
 
         projectCards.forEach(card => {

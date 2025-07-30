@@ -1,71 +1,78 @@
-        // Service data
-        const serviceData = {
-
- construccion: {
- title: 'Construcción General',
- description: 'Especialistas en edificaciones residenciales, naves industriales y construcción de infraestructura con los más altos estándares de calidad y profesionalismo.',
- heroImage: 'https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
- overview: `
+// Service data
+const serviceData = {
+  construccion: {
+    title: "Construcción General",
+    description:
+      "Especialistas en edificaciones residenciales, naves industriales y construcción de infraestructura con los más altos estándares de calidad y profesionalismo.",
+    heroImage:
+      "https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+    overview: `
        <p>Nuestra área de Construcción General abarca desde edificaciones residenciales hasta complejas naves industriales. Nos especializamos en proyectos que requieren precisión técnica y cumplimiento de los más altos estándares de calidad en la industria de la construcción.</p>
        <p>Con años de experiencia en el sector, hemos desarrollado procesos eficientes que garantizan la entrega de proyectos en tiempo y forma, manteniendo siempre la comunicación transparente con nuestros clientes durante todo el proceso constructivo.</p>
    `,
- highlights: [
-       'Edificaciones Residenciales Verticales',
-       'Naves Industriales',
-       'Construcción de Cuartos Fríos',
-       'Reparación y Construcción de Viviendas'
- ],
-   timeline: '4-8 meses según complejidad del proyecto'
-},
-hidraulica: {
-   title: 'Infraestructura Hidráulica',
-   description: 'Servicios especializados en diseño, construcción y mantenimiento de sistemas hidráulicos, desde pozos profundos hasta sistemas completos de abastecimiento de agua.',
-   heroImage: 'https://images.pexels.com/photos/2510067/pexels-photo-2510067.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
-   overview: `
+    highlights: [
+      "Edificaciones Residenciales Verticales",
+      "Naves Industriales",
+      "Construcción de Cuartos Fríos",
+      "Reparación y Construcción de Viviendas",
+    ],
+    timeline: "4-8 meses según complejidad del proyecto",
+  },
+  hidraulica: {
+    title: "Infraestructura Hidráulica",
+    description:
+      "Servicios especializados en diseño, construcción y mantenimiento de sistemas hidráulicos, desde pozos profundos hasta sistemas completos de abastecimiento de agua.",
+    heroImage:
+      "https://images.pexels.com/photos/2510067/pexels-photo-2510067.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+    overview: `
        <p>Nuestra especialidad en Infraestructura Hidráulica abarca desde el diseño hidráulico hasta la construcción completa de sistemas de abastecimiento de agua. Contamos con la experiencia y tecnología necesaria para ejecutar proyectos desde estudios hidrogeológicos hasta sistemas de bombeo complejos.</p>
        <p>Trabajamos con tecnología de punta y personal altamente calificado para garantizar sistemas hidráulicos eficientes, sustentables y que cumplan con todas las normativas técnicas vigentes.</p>
    `,
-   highlights: [
-       'Diseño Hidráulico',
-       'Estudios Hidrogeológicos',
-       'Perforación y Equipamiento de Pozos Profundos',
-       'Sistemas de Abastecimiento de Agua Potable'
-   ],
-   timeline: '2-6 meses según complejidad del sistema'
-},
-electrica: {
-   title: 'Area Electrica',
-   description: 'Instalaciones eléctricas especializadas para proyectos residenciales, industriales y subestaciones eléctricas con los más altos estándares de seguridad y eficiencia.',
-   heroImage: 'https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
-   overview: `
+    highlights: [
+      "Diseño Hidráulico",
+      "Estudios Hidrogeológicos",
+      "Perforación y Equipamiento de Pozos Profundos",
+      "Sistemas de Abastecimiento de Agua Potable",
+    ],
+    timeline: "2-6 meses según complejidad del sistema",
+  },
+  electrica: {
+    title: "Area Electrica",
+    description:
+      "Instalaciones eléctricas especializadas para proyectos residenciales, industriales y subestaciones eléctricas con los más altos estándares de seguridad y eficiencia.",
+    heroImage:
+      "https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+    overview: `
        <p>Nuestro Área Eléctrica se especializa en el diseño, instalación y mantenimiento de sistemas eléctricos para todo tipo de proyectos. Desde instalaciones residenciales hasta complejas subestaciones eléctricas para sistemas industriales.</p>
        <p>Contamos con personal certificado y experiencia comprobada en instalaciones eléctricas que cumplen con todas las normativas de seguridad y eficiencia energética, garantizando sistemas confiables y duraderos.</p>
    `,
-   highlights: [
-       'Subestaciones Eléctricas',
-       'Instalaciones Eléctricas en Naves Industriales',
-       'Instalaciones Eléctricas en Viviendas y Residencias',
-       'Sistemas de Bombeo'
-   ],
-   timeline: '1-4 meses según complejidad del proyecto'
-},
-vial: {
-   title: 'Infraestructura Vial',
-   description: 'Construcción, mantenimiento y supervisión de carreteras, caminos y red vial con tecnología moderna y cumplimiento de estándares internacionales.',
-   heroImage: 'https://images.pexels.com/photos/2409681/pexels-photo-2409681.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
-   overview: `
+    highlights: [
+      "Subestaciones Eléctricas",
+      "Instalaciones Eléctricas en Naves Industriales",
+      "Instalaciones Eléctricas en Viviendas y Residencias",
+      "Sistemas de Bombeo",
+    ],
+    timeline: "1-4 meses según complejidad del proyecto",
+  },
+  vial: {
+    title: "Infraestructura Vial",
+    description:
+      "Construcción, mantenimiento y supervisión de carreteras, caminos y red vial con tecnología moderna y cumplimiento de estándares internacionales.",
+    heroImage:
+      "https://images.pexels.com/photos/2409681/pexels-photo-2409681.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+    overview: `
        <p>Nuestra área de Infraestructura Vial se dedica al mantenimiento, construcción y supervisión de redes viales. Trabajamos tanto en carreteras pavimentadas como en caminos rurales, garantizando conectividad y seguridad en el transporte.</p>
        <p>Utilizamos técnicas modernas de construcción y mantenimiento vial, cumpliendo con estándares internacionales de calidad y durabilidad en todos nuestros proyectos de infraestructura vial.</p>
    `,
-   highlights: [
-       'Mantenimiento de Red Pavimentada',
-       'Mantenimiento de Red Vial No Pavimentada',
-       'Balastado y Rehabilitación de Caminos',
-       'Supervisión de Construcción y Mantenimiento'
+    highlights: [
+      "Mantenimiento de Red Pavimentada",
+      "Mantenimiento de Red Vial No Pavimentada",
+      "Balastado y Rehabilitación de Caminos",
+      "Supervisión de Construcción y Mantenimiento",
     ],
-    timeline: '1-6 meses según extensión del proyecto'
-}
-        };
+    timeline: "1-6 meses según extensión del proyecto",
+  },
+};
 
         // Mobile menu toggle
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');

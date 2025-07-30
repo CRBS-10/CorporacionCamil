@@ -1,6 +1,5 @@
 
-
-        // Language switching functionality
+ // Language switching functionality
         function switchLanguage(lang) {
             const elements = document.querySelectorAll('[data-translate]');
             elements.forEach(element => {
