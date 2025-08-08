@@ -60,252 +60,211 @@
             filterProjects();
         });
 
-        // Lightbox functionality
-        const lightbox = document.getElementById('lightbox');
-        const lightboxMainImage = document.getElementById('lightbox-main-image');
-        const lightboxTitle = document.getElementById('lightbox-title');
-        const lightboxDate = document.getElementById('lightbox-date');
-        const lightboxValue = document.getElementById('lightbox-value');
-        const lightboxCategory = document.getElementById('lightbox-category');
-        const lightboxDescription = document.getElementById('lightbox-description');
-        const lightboxThumbs = document.querySelectorAll('.lightbox-thumb');
+       const lightbox = document.getElementById('lightbox');
+const lightboxMainImage = document.getElementById('lightbox-main-image');
+const lightboxTitle = document.getElementById('lightbox-title');
+const lightboxDate = document.getElementById('lightbox-date');
+const lightboxCategory = document.getElementById('lightbox-category');
+const lightboxDescription = document.getElementById('lightbox-description');
+const lightboxTimeline = document.getElementById('lightbox-timeline');
+const lightboxThumbs = document.querySelectorAll('.lightbox-thumb');
 
-// Project data for lightbox
+// Colores por categoría (ajusta a tus tailwind tokens)
+const categoryColors = {
+  'Construccion': 'bg-primary',
+  'Vial': 'bg-secondary',
+  'Hidraulico': 'bg-accent',
+  'Electrico': 'bg-secondary'
+};
+
+// Datos de proyectos (ES) — sin "Equipo" ni "Estetica"
 const projectData = {
-  'Modern Family Home': {
+  "Calle San Sebastian": {
     images: [
-      'https://images.pixabay.com/photo/2016/11/29/03/53/house-1867187_1280.jpg',
-      'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800',
-      'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&w=800'
+      "../Images/Construccion/Calles/Calle San Sebastian.jpg",
+      "../Images/Construccion/Calles/Calle2-San Sabastian.jpg",
+      "../Images/Construccion/Calles/Calle3-San Sebastian.jpg"
     ],
-    date: 'March 2024',
-    value: '$450,000',
-    category: 'Residential',
-    description: 'Contemporary residential construction with sustainable materials and energy-efficient design features. This project showcases modern architecture with smart home integration.'
+    date: "2024",
+    category: "Vial",
+    description: "Mejoramiento y rehabilitación vial con señalización y accesibilidad.",
+    timeline: { "Planificación": "3 semanas", "Ejecución": "4 meses", "Cierre y recepción": "3 semanas" }
   },
-  'Office Complex Downtown': {
+  "Centro Escolar STC": {
     images: [
-      'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800',
-      'https://images.pixabay.com/photo/2016/11/29/03/53/house-1867187_1280.jpg',
-      'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&w=800'
+      "../Images/Construccion/Escuela/STC1.jpg",
+      "../Images/Construccion/Escuela/STC2.jpg",
+      "../Images/Construccion/Escuela/STC3.jpg"
     ],
-    date: 'January 2024',
-    value: '$2.1M',
-    category: 'Commercial',
-    description: 'Multi-story commercial complex with modern amenities and smart building technology. Features include advanced HVAC systems and sustainable construction practices.'
+    date: "2024",
+    category: "Construccion",
+    description: "Intervención en infraestructura educativa: aulas, techos y accesos.",
+    timeline: { "Planificación": "1 mes", "Ejecución": "6 meses", "Cierre y recepción": "3 semanas" }
   },
-  'Urbanización Los Robles': {
+  "Limpieza": {
     images: [
-      '../Images/Construccion/Vivienda/Casa-t1.jpg',
-      '../Images/Construccion/Vivienda/Casa-t2.jpg',
-      '../Images/Construccion/Vivienda/Casa-t3.jpg'
+      "../Images/Hidraulico/Limpieza/LP1.jpg",
+      "../Images/Hidraulico/Limpieza/LP2.jpg",
+      "../Images/Hidraulico/Limpieza/LP3.jpg"
     ],
-    date: 'Enero 2024',
-    value: '$1.5M',
-    category: 'Residencial',
-    description: 'Proyecto habitacional de 24 viviendas unifamiliares con diseño eficiente, acceso pavimentado y áreas verdes comunes.'
+    date: "2024",
+    category: "Hidraulico",
+    description: "Limpieza y mantenimiento de sistemas hidráulicos y entorno de obra.",
+    timeline: { "Planificación": "3 días", "Ejecución": "1 semana", "Cierre y recepción": "2 días" }
   },
-  'Mejoras en Parque Recreativo': {
+  "PN": {
     images: [
-      '../Images/Construccion/Parque/p1.jpg',
-      '../Images/Construccion/Parque/p2.jpg',
-      '../Images/Construccion/Parque/p3.jpg'
+      "../Images/Electrico/panel de control/PN1.JPG",
+      "../Images/Electrico/panel de control/PN2.JPG",
+      "../Images/Electrico/panel de control/PN3.JPG"
     ],
-    date: 'Noviembre 2023',
-    value: '$180,000',
-    category: 'Remodelación',
-    description: 'Reacondicionamiento de zonas verdes, juegos infantiles, mobiliario urbano y senderos iluminados en comunidad rural.'
+    date: "2024",
+    category: "Electrico",
+    description: "Instalación y configuración de paneles eléctricos de control.",
+    timeline: { "Planificación": "2 semanas", "Ejecución": "1 mes", "Cierre y recepción": "1 semana" }
   },
-  'Restaurante El Sazón Urbano': {
+  "Parque": {
     images: [
-      '../Images/Estetica/Pictures/ESTE1.jpg',
-      '../Images/Estetica/Equipo de trabajo/Eq1.jpg',
-      '../Images/Construccion/Vivienda/Casa-p1.jpg'
+      "../Images/Construccion/Parque/p1.jpg",
+      "../Images/Construccion/Parque/p2.jpg",
+      "../Images/Construccion/Parque/p3.jpg"
     ],
-    date: 'Junio 2023',
-    value: '$95,000',
-    category: 'Comida',
-    description: 'Diseño e implementación de restaurante moderno con iluminación cálida, cocina industrial y fachada de impacto.'
+    date: "2024",
+    category: "Construccion",
+    description: "Renovación de áreas recreativas, mobiliario urbano e iluminación.",
+    timeline: { "Planificación": "3 semanas", "Ejecución": "2 meses", "Cierre y recepción": "2 semanas" }
   },
-  'Supervisión Centro Escolar STC': {
+  "Parque Jutiapa": {
     images: [
-      '../Images/Construccion/Escuela/STC1.jpg',
-      '../Images/Construccion/Escuela/STC2.jpg',
-      '../Images/Construccion/Escuela/STC3.jpg'
+      "../Images/Construccion/Parque/Jutiapa/PJ1.JPG",
+      "../Images/Construccion/Parque/Jutiapa/PJ2.JPG",
+      "../Images/Construccion/Parque/Jutiapa/PJ3.JPG"
     ],
-    date: 'Abril 2022',
-    value: '$210,000',
-    category: 'Supervisión',
-    description: 'Supervisión técnica y control de calidad para la ampliación de aulas, techos y accesos del Centro Escolar STC.'
+    date: "2024",
+    category: "Construccion",
+    description: "Intervención en parque de Jutiapa con juegos, senderos e iluminación.",
+    timeline: { "Planificación": "1 mes", "Ejecución": "3 meses", "Cierre y recepción": "2 semanas" }
   },
-  'Pozo Artesanal Comunidad Los Pinos': {
+  "Pozo": {
     images: [
-      '../Images/Hidraulico/Pozo/pozo-1.JPG',
-      '../Images/Hidraulico/Pozo/Pozo2.JPG',
-      '../Images/Hidraulico/Pozo/Pozo-3.JPG'
+      "../Images/Hidraulico/Pozo/pozo-1.JPG",
+      "../Images/Hidraulico/Pozo/Pozo2.JPG",
+      "../Images/Hidraulico/Pozo/Pozo-3.JPG"
     ],
-    date: 'Marzo 2023',
-    value: '$58,000',
-    category: 'Remodelación',
-    description: 'Excavación y habilitación de pozo artesanal con cercado, sistema de bombeo manual y caseta técnica para comunidad rural.'
+    date: "2024",
+    category: "Hidraulico",
+    description: "Obra hidráulica: excavación y habilitación de pozo con caseta técnica.",
+    timeline: { "Planificación": "2 semanas", "Ejecución": "1 mes", "Cierre y recepción": "1 semana" }
   },
-  'Instalación Paneles de Control': {
+  "Subestacion": {
     images: [
-      '../Images/Electrico/panel de control/PN1.JPG',
-      '../Images/Electrico/panel de control/PN2.JPG',
-      '../Images/Electrico/panel de control/PN3.JPG'
+      "../Images/Electrico/Sub estacion/subEstacion1.JPG",
+      "../Images/Electrico/Sub estacion/subEztacion2.JPG",
+      "../Images/Electrico/Sub estacion/subEstacion3.JPG"
     ],
-    date: 'Agosto 2023',
-    value: '$130,000',
-    category: 'Supervisión',
-    description: 'Instalación y configuración de paneles eléctricos de control automatizado en planta de distribución.'
+    date: "2012",
+    category: "Electrico",
+    description: "Montaje y adecuación de infraestructura eléctrica/subestación.",
+    timeline: { "Planificación": "1 mes", "Ejecución": "5 meses", "Cierre y recepción": "3 semanas" }
   },
-  'Rehabilitación Calle San Sebastián': {
+  "Tuberias": {
     images: [
-      '../Images/Logo.png',
-      '../Images/Construccion/Calles/Calle San Sebastian.jpg',
-      '../Images/Construccion/Calles/Calle2-San Sabastian.jpg'
+      "../Images/Hidraulico/Colocacion de tuberias/TB1.jpg",
+      "../Images/Hidraulico/Colocacion de tuberias/TB2.jpg",
+      "../Images/Hidraulico/Colocacion de tuberias/TB3.jpg"
     ],
-    date: 'Febrero 2024',
-    value: '$320,000',
-    category: 'Remodelación',
-    description: 'Recarpeteo de vía principal, señalización horizontal y accesibilidad universal.'
+    date: "2024",
+    category: "Hidraulico",
+    description: "Colocación de tuberías y cajas de registro para redes hidráulicas.",
+    timeline: { "Planificación": "2 semanas", "Ejecución": "6 semanas", "Cierre y recepción": "1 semana" }
   },
-
-  'Ampliación Centro Escolar El Rosario': {
+  "Vivienda ACA": {
     images: [
-      '../Images/Construccion/Calles/Calle3-San Sebastian.jpg',
-      '../Images/Construccion/Escuela/STC1.jpg',
-      '../Images/Construccion/Escuela/STC2.jpg'
+      "../Images/Construccion/Vivienda/ACA1.JPG",
+      "../Images/Construccion/Vivienda/ACA2.JPG",
+      "../Images/Construccion/Vivienda/ACA3.JPG"
     ],
-    date: 'Enero 2024',
-    value: '$275,000',
-    category: 'Supervisión',
-    description: 'Ampliación de infraestructura educativa: aulas, sanitarios y techado.'
+    date: "2024",
+    category: "Construccion",
+    description: "Vivienda unifamiliar con diseño eficiente y acabados de calidad.",
+    timeline: { "Planificación": "1 mes", "Ejecución": "7 meses", "Cierre y recepción": "3 semanas" }
   },
-
-  'Renovación Parque Infantil Sur': {
+  "Vivienda Casa P": {
     images: [
-      '../Images/Construccion/Escuela/STC3.jpg',
-      '../Images/Construccion/Escuela/STC4.jpg',
-      '../Images/Construccion/Parque/p1.jpg'
+      "../Images/Construccion/Vivienda/Casa-p1.jpg"
     ],
-    date: 'Diciembre 2023',
-    value: '$98,000',
-    category: 'Remodelación',
-    description: 'Remodelación completa de parque infantil con seguridad perimetral.'
+    date: "2024",
+    category: "Construccion",
+    description: "Modelo de vivienda: variante P, optimizada para clima local.",
+    timeline: { "Planificación": "3 semanas", "Ejecución": "5 meses", "Cierre y recepción": "2 semanas" }
   },
-
-  'Instalación Juegos Nuevos': {
+  "Vivienda Casa T": {
     images: [
-      '../Images/Construccion/Parque/p2.jpg',
-      '../Images/Construccion/Parque/p3.jpg',
-      '../Images/Construccion/Parque/Jutiapa/PJ1.JPG'
+      "../Images/Construccion/Vivienda/Casa-t1.jpg",
+      "../Images/Construccion/Vivienda/Casa-t2.jpg",
+      "../Images/Construccion/Vivienda/Casa-t3.jpg"
     ],
-    date: 'Noviembre 2023',
-    value: '$110,000',
-    category: 'Comida',
-    description: 'Implementación de juegos recreativos modernos y sistema de vigilancia.'
+    date: "2024",
+    category: "Construccion",
+    description: "Modelo de vivienda: variante T, estructura eficiente y térmica.",
+    timeline: { "Planificación": "3 semanas", "Ejecución": "5 meses", "Cierre y recepción": "2 semanas" }
   },
-
-  'Viviendas Modelo Compacto': {
+  "Obras de Mitigacion": {
     images: [
-      '../Images/Construccion/Parque/Jutiapa/PJ2.JPG',
-      '../Images/Construccion/Parque/Jutiapa/PJ3.JPG',
-      '../Images/Construccion/Vivienda/Casa-t1.jpg'
+      "../Images/Obras mitigacion/mit1.JPG",
+      "../Images/Obras mitigacion/mit2.JPG",
+      "../Images/Obras mitigacion/mit3.JPG"
     ],
-    date: 'Octubre 2023',
-    value: '$490,000',
-    category: 'Residencial',
-    description: 'Construcción de vivienda eficiente con materiales térmicos y diseño compacto.'
-  },
-
-  'Supervisión Planta Potabilizadora': {
-    images: [
-      '../Images/Construccion/Vivienda/Casa-t2.jpg',
-      '../Images/Construccion/Vivienda/Casa-t3.jpg',
-      '../Images/Hidraulico/Pozo/pozo-1.JPG'
-    ],
-    date: 'Septiembre 2023',
-    value: '$240,000',
-    category: 'Supervisión',
-    description: 'Supervisión técnica y control de calidad para planta de agua potable.'
-  },
-
-  'Construcción Losa Comunal': {
-    images: [
-      '../Images/Hidraulico/Pozo/Pozo2.JPG',
-      '../Images/Hidraulico/Pozo/Pozo-3.JPG',
-      '../Images/Electrico/panel de control/PN1.JPG'
-    ],
-    date: 'Agosto 2023',
-    value: '$180,000',
-    category: 'Remodelación',
-    description: 'Ejecución de losa de concreto armado con drenaje y graderíos.'
-  },
-
-  'Instalación Cableado Subterráneo': {
-    images: [
-      '../Images/Electrico/panel de control/PN2.JPG',
-      '../Images/Electrico/panel de control/PN3.JPG',
-      '../Images/Estetica/Equipo de trabajo/Eq1.jpg'
-    ],
-    date: 'Julio 2023',
-    value: '$130,000',
-    category: 'Supervisión',
-    description: 'Tendido eléctrico subterráneo y cajas de inspección en zona residencial.'
-  },
-
-  'Urbanización Jardines del Valle': {
-    images: [
-      '../Images/Estetica/Pictures/ESTE1.jpg',
-      '../Images/Construccion/Vivienda/Casa-p1.jpg',
-      '../Images/Construccion/Escuela/STC1.jpg'
-    ],
-    date: 'Junio 2023',
-    value: '$680,000',
-    category: 'Residencial',
-    description: 'Urbanización con diseño vial, servicios básicos y lotificación de viviendas.'
+    date: "2024",
+    category: "Construccion",
+    description: "Obras de mitigación para estabilidad y seguridad del terreno.",
+    timeline: { "Planificación": "3 semanas", "Ejecución": "2 meses", "Cierre y recepción": "2 semanas" }
   }
-        };
+};
 
-        projectCards.forEach(card => {
-            card.addEventListener('click', () => {
-                const title = card.dataset.title;
-                const data = projectData[title] || projectData['Modern Family Home'];
-                
-                lightboxTitle.textContent = title;
-                lightboxDate.textContent = data.date;
-                lightboxValue.textContent = data.value;
-                lightboxCategory.textContent = data.category;
-                lightboxDescription.textContent = data.description;
-                
-                // Set category color
-                lightboxCategory.className = `px-3 py-1 rounded-full text-sm text-white ${
-                    data.category === 'Residential' ? 'bg-primary' :
-                    data.category === 'Commercial' ? 'bg-secondary' :
-                    data.category === 'Remodeling' ? 'bg-accent' : 'bg-primary'
-                }`;
-                
-                // Set main image
-                lightboxMainImage.src = data.images[0];
-                lightboxMainImage.alt = title;
-                
-                // Update thumbnails
-                lightboxThumbs.forEach((thumb, index) => {
-                    if (data.images[index]) {
-                        thumb.src = data.images[index];
-                        thumb.classList.remove('hidden');
-                        thumb.classList.toggle('active', index === 0);
-                    } else {
-                        thumb.classList.add('hidden');
-                    }
-                });
-                
-                lightbox.classList.remove('hidden');
-                document.body.style.overflow = 'hidden';
-            });
-        });
+projectCards.forEach(card => {
+  card.addEventListener('click', () => {
+    const title = card.dataset.title;
+    const data = projectData[title];
+    if (!data) return;
+
+    lightboxTitle.textContent = title;
+    lightboxDate.textContent = data.date;
+    lightboxDescription.textContent = data.description;
+
+    // Color por categoría
+    const colorClass = categoryColors[data.category] || 'bg-primary';
+    lightboxCategory.textContent = data.category;
+    lightboxCategory.className = `px-3 py-1 rounded-full text-sm text-white ${colorClass}`;
+
+    // Imagen principal
+    lightboxMainImage.src = data.images[0] || '';
+    lightboxMainImage.alt = title;
+
+    // Miniaturas
+    lightboxThumbs.forEach((thumb, index) => {
+      if (data.images[index]) {
+        thumb.src = data.images[index];
+        thumb.classList.remove('hidden');
+        thumb.classList.toggle('active', index === 0);
+      } else {
+        thumb.classList.add('hidden');
+      }
+    });
+
+    // Cronograma
+    lightboxTimeline.innerHTML = '';
+    Object.entries(data.timeline || {}).forEach(([fase, dur]) => {
+      const li = document.createElement('li');
+      li.className = 'flex justify-between';
+      li.innerHTML = `<span class="text-text-secondary">${fase}:</span><span class="text-sm">${dur}</span>`;
+      lightboxTimeline.appendChild(li);
+    });
+
+    lightbox.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  });
+});
 
         // Thumbnail click handlers
         lightboxThumbs.forEach(thumb => {
@@ -403,3 +362,78 @@ const projectData = {
                 }
             }
         });
+
+        // ===== Permalink del proyecto =====
+function getProjectUrl(title) {
+  const base = window.location.origin + window.location.pathname; // misma página
+  const hash = '#project=' + encodeURIComponent(title);
+  return base + hash;
+}
+
+// ===== Compartir (cards y lightbox) =====
+function setupShareButtons(selector) {
+  document.querySelectorAll(selector).forEach(btn => {
+    btn.addEventListener('click', async (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+
+      const title = btn.dataset.title || 'Proyecto';
+      const url = getProjectUrl(title);
+      const text = `Mira este proyecto: ${title}`;
+
+      // 1) Web Share API (móvil / algunos escritorios)
+      if (navigator.share) {
+        try {
+          await navigator.share({
+            title: `${title} - Corporación CAMIL`,
+            text,
+            url
+          });
+          return;
+        } catch (err) {
+          // si el usuario cancela, seguimos al fallback
+        }
+      }
+
+      // 2) Fallback: copiar enlace y abrir WhatsApp Web
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(url);
+          alert('Enlace copiado al portapapeles ✅');
+        } else {
+          // copia “manual”
+          const ta = document.createElement('textarea');
+          ta.value = url;
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+          alert('Enlace copiado al portapapeles ✅');
+        }
+      } catch (_) {
+        // si no se puede copiar, abrimos igual WhatsApp Web
+      }
+
+      // Abre WhatsApp Web con el texto (puedes cambiar por Facebook/Twitter si prefieres)
+      const wText = encodeURIComponent(`${text}\n${url}`);
+      window.open(`https://wa.me/?text=${wText}`, '_blank');
+    }, { passive: true });
+  });
+}
+
+// Aplica a botones de la tarjeta y del lightbox (si tienes uno allí)
+setupShareButtons('.share-btn');
+setupShareButtons('.share-btn-lightbox');
+
+// ===== Abrir lightbox si viene con #project=... =====
+window.addEventListener('DOMContentLoaded', () => {
+  const hash = new URLSearchParams(window.location.hash.replace(/^#/, ''));
+
+  const projectFromHash = hash.get('project');
+  if (projectFromHash && projectData[projectFromHash]) {
+    // busca la tarjeta con ese título y dispara su click
+    const card = Array.from(document.querySelectorAll('.project-card'))
+      .find(el => (el.dataset.title || '').trim().toLowerCase() === projectFromHash.trim().toLowerCase());
+    if (card) card.click();
+  }
+});
