@@ -140,74 +140,77 @@
     </div>
 </section>
 
-    <!-- Project Gallery Section -->
-    <section id="proyectos" class="py-20 bg-background">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-fluid-3xl font-heading font-bold text-text-primary mb-4">Proyectos Recientes</h2>
-                <p class="text-fluid-lg text-text-secondary max-w-2xl mx-auto">
-                    Explore nuestro portafolio de proyectos completados que demuestran nuestro compromiso con la calidad y la excelencia.
-                </p>
-            </div>
+<!-- Project Gallery Section -->
+<section id="proyectos" class="py-20 bg-background">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-16">
+      <h2 class="text-fluid-3xl font-heading font-bold text-text-primary mb-4">Proyectos Recientes</h2>
+      <p class="text-fluid-lg text-text-secondary max-w-2xl mx-auto">
+        Explore nuestro portafolio de proyectos completados que demuestran nuestro compromiso con la calidad y la excelencia.
+      </p>
+    </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Proyecto 1 -->
-                <div class="group cursor-pointer" onclick="openLightbox('https://images.pixabay.com/photo/2016/11/29/03/53/house-1867187_1280.jpg', 'Edificio Residencial Moderno')">
-                    <div class="relative overflow-hidden rounded-lg shadow-medium group-hover:shadow-large transition-all duration-300">
-                        <img src="https://images.pixabay.com/photo/2016/11/29/03/53/house-1867187_1280.jpg" alt="Edificio Residencial Moderno" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
-                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
-                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="mt-4">
-                        <h3 class="text-fluid-lg font-heading font-semibold mb-2">Edificio Residencial Moderno</h3>
-                        <p class="text-text-secondary">Construcción residencial contemporánea con materiales sostenibles</p>
-                    </div>
-                </div>
-
-                <!-- Proyecto 2 -->
-                <div class="group cursor-pointer" onclick="openLightbox('https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800', 'Nave Industrial')">
-                    <div class="relative overflow-hidden rounded-lg shadow-medium group-hover:shadow-large transition-all duration-300">
-                        <img src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Nave Industrial" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
-                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
-                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="mt-4">
-                        <h3 class="text-fluid-lg font-heading font-semibold mb-2">Nave Industrial</h3>
-                        <p class="text-text-secondary">Complejo industrial con instalaciones eléctricas modernas</p>
-                    </div>
-                </div>
-
-                <!-- Proyecto 3 -->
-                <div class="group cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&w=800', 'Infraestructura Vial')">
-                    <div class="relative overflow-hidden rounded-lg shadow-medium group-hover:shadow-large transition-all duration-300">
-                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&w=800" alt="Infraestructura Vial" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
-                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
-                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="mt-4">
-                        <h3 class="text-fluid-lg font-heading font-semibold mb-2">Infraestructura Vial</h3>
-                        <p class="text-text-secondary">Proyecto de mantenimiento y rehabilitación de carreteras</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="text-center mt-12">
-                <a href="project_gallery.html" class="btn-primary">Ver Todos los Proyectos</a>
-            </div>
+    <!-- GRID -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Proyecto 1 -->
+      <div class="group cursor-pointer" onclick="openLightbox('../Images/Construccion/Calles/Calle San Sebastian.jpg', 'Calle San Sebastián')">
+        <div class="relative overflow-hidden rounded-lg shadow-medium group-hover:shadow-large transition-all duration-300">
+          <img src="../Images/Construccion/Calles/Calle San Sebastian.jpg" alt="Calle San Sebastián" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
+          <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
+            </svg>
+          </div>
         </div>
-    </section>
+        <div class="mt-4">
+          <h3 class="text-fluid-lg font-heading font-semibold mb-2">Calle San Sebastián</h3>
+          <p class="text-text-secondary">Mejoramiento y rehabilitación vial con señalización y accesibilidad.</p>
+        </div>
+      </div>
+
+      <!-- Proyecto 2 -->
+      <div class="group cursor-pointer" onclick="openLightbox('../Images/Construccion/Vivienda/Casa-p1.jpg', 'Remodelación de Vivienda Interna')">
+        <div class="relative overflow-hidden rounded-lg shadow-medium group-hover:shadow-large transition-all duration-300">
+          <img src="../Images/Construccion/Vivienda/Casa-p1.jpg" alt="Remodelación de Vivienda Interna" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
+          <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
+            </svg>
+          </div>
+        </div>
+        <div class="mt-4">
+          <h3 class="text-fluid-lg font-heading font-semibold mb-2">Remodelación de Vivienda Interna</h3>
+          <p class="text-text-secondary">Remodelación con diseño moderno y eficiencia energética.</p>
+        </div>
+      </div>
+
+      <!-- Proyecto 3 -->
+      <div class="group cursor-pointer" onclick="openLightbox('../Images/Hidraulico/Limpieza/LP1.jpg', 'Sistema Hidráulico Municipal')">
+        <div class="relative overflow-hidden rounded-lg shadow-medium group-hover:shadow-large transition-all duration-300">
+          <img src="../Images/Hidraulico/Limpieza/LP1.jpg" alt="Sistema Hidráulico Municipal" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
+          <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
+            </svg>
+          </div>
+        </div>
+        <div class="mt-4">
+          <h3 class="text-fluid-lg font-heading font-semibold mb-2">Sistema Hidráulico Municipal</h3>
+          <p class="text-text-secondary">Instalación de sistema hidráulico para mejorar la distribución de agua potable en la comunidad.</p>
+        </div>
+      </div>
+    </div>
+    <!-- /GRID -->
+
+    <!-- Botón centrado fuera del grid -->
+    <div class="w-full flex justify-center mt-12">
+      <a href="project_gallery.html" class="btn-primary">Ver Todos los Proyectos</a>
+    </div>
+  </div> <!-- cierra .container -->
+</section>
 
     <!-- About Us Section -->
     <section id="nosotros" class="py-20 bg-surface">
@@ -262,7 +265,7 @@
                 
                 <div class="relative">
                     <img src="../Images/Electrico/Sub estacion/CE OLOF PALME/SubEstacion1.jfif" alt="Equipo de Corporación CAMIL trabajando" class="w-full h-96 object-cover rounded-lg shadow-large" loading="lazy" />
-                    <div class="absolute -bottom-6 -right-6 bg-secondary text-white p-6 rounded-lg shadow-large">
+                    <div class="absolute -bottom-6 -left-6 bg-secondary text-white p-6 rounded-lg shadow-large">
                         <div class="text-center">
                             <div class="text-3xl font-bold">15+</div>
                             <div class="text-sm">Años de Experiencia</div>
@@ -367,7 +370,7 @@
                                 </svg>
                                 <div>
                                     <h4 class="font-semibold text-text-primary">Correo</h4>
-                                    <p class="text-text-secondary">info@corporacioncamil.com</p>
+                                    <p class="text-text-secondary">ffcorporacioncamil@gmail.com</p>
                                 </div>
                             </div>
                             
@@ -401,16 +404,7 @@
 
 
 
-      <!-- Sticky Contact Button -->
-    <div class="fixed bottom-6 right-6 z-40">
-        <a href="contact.html" class="btn-secondary shadow-large flex items-center space-x-2">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-            </svg>
-            <span>Contact Us</span>
-        </a>
-    </div>
+  
     <!-- Footer -->
     <footer class="bg-text-primary text-white py-12">
         <div class="container mx-auto px-4">
@@ -456,7 +450,7 @@
                         <li><a href="about_us.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Nosotros</a></li>
                         <li><a href="project_gallery.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Proyectos</a></li>
                         <li><a href="contact.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Contacto</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-secondary transition-colors duration-200">Carreras</a></li>
+                        <li><a href="services_detail.html" class="text-gray-300 hover:text-secondary transition-colors duration-200">Servicios</a></li>
                     </ul>
                 </div>
                 

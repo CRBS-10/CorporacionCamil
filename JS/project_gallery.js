@@ -191,7 +191,9 @@ const projectData = {
   },
   "Vivienda Casa P": {
     images: [
-      "../Images/Construccion/Vivienda/Casa-p1.jpg"
+      "../Images/Construccion/Vivienda/Casa-p1.jpg",
+      "../Images/Construccion/Vivienda/Casa-p2.jpg",
+      "../Images/Construccion/Vivienda/Casa-p3.jpg"
     ],
     date: "2024",
     category: "Construccion",
